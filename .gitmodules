@@ -1,0 +1,3 @@
+[submodule "OEE_Demo/Firmware/components/IDF-Library"]
+	path = OEE_Demo/Firmware/components/IDF-Library
+	url = https://github.com/buiminhduc23011/IDF-Library.git

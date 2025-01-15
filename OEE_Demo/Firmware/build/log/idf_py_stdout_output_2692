@@ -1,0 +1,115 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan 13 2025 09:39:59[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00011000 00019000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0002a000 00002000[0m
+[0;32mI (84) boot:  2 phy_init         RF data          01 01 0002c000 00001000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00030000 001a9000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 001e0000 001a9000[0m
+[0;32mI (107) boot:  5 ot_storage       Unknown data     01 3a 00389000 00002000[0m
+[0;32mI (114) boot: End of partition table[0m
+[0;32mI (118) boot: No factory image, trying OTA 0[0m
+[0;32mI (123) esp_image: segment 0: paddr=00030020 vaddr=3f400020 size=2a934h (174388) map[0m
+[0;32mI (192) esp_image: segment 1: paddr=0005a95c vaddr=3ffb0000 size=04180h ( 16768) load[0m
+[0;32mI (198) esp_image: segment 2: paddr=0005eae4 vaddr=40080000 size=01534h (  5428) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=bdaf4h (776948) map[0m
+[0;32mI (472) esp_image: segment 4: paddr=0011db1c vaddr=40081534 size=180ech ( 98540) load[0m
+[0;32mI (524) boot: Loaded app from partition at offset 0x30000[0m
+[0;32mI (589) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (589) boot: Disabling RNG early entropy source...[0m
+[0;32mI (600) cpu_start: Multicore app[0m
+[0;32mI (609) cpu_start: Pro cpu start user code[0m
+[0;32mI (609) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (609) app_init: Application information:[0m
+[0;32mI (612) app_init: Project name:     SCADA_GUNZE_20250113_093927[0m
+[0;32mI (618) app_init: App version:      1.0.2_20250113_093927[0m
+[0;32mI (624) app_init: Compile time:     Jan 13 2025 09:39:47[0m
+[0;32mI (630) app_init: ELF file SHA256:  ee81bcdfd...[0m
+[0;32mI (636) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (641) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (645) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (650) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (655) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (662) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (668) heap_init: At 3FFB93F0 len 00026C10 (155 KiB): DRAM[0m
+[0;32mI (675) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (681) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (687) heap_init: At 40099620 len 000069E0 (26 KiB): IRAM[0m
+[0;32mI (695) spi_flash: detected chip: generic[0m
+[0;32mI (698) spi_flash: flash io: dio[0m
+[0;32mI (703) main_task: Started on CPU0[0m
+[0;32mI (713) main_task: Calling app_main()[0m
+[0;32mI (713) MAIN-TASK: ----------------Initializing----------------[0m
+[0;32mI (733) NVS: Hoan thanh
+[0m
+[0;32mI (733) uart: ESP_INTR_FLAG_IRAM fla[0;32mI (743) UART-TASK: Hello[0m
+[0;32mI (743) UART-TASK: UART initialized successfully[0m
+[0;32mI (743) WebSetup-TASK: Initializing SPIFFS[0m
+[0;31mE (743) SPIFFS: spiffs partition could not be found[0m
+[0;31mE (743) WebSetup-TASK: Failed to find SPIFFS partition[0m
+[0;32mI (763) wifi:wifi driver task: 3ffc4a64, prio:23, stack:6656, core=0[0m
+[0;32mI (763) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (763) wifi:wifi certification version: v7.0[0m
+[0;32mI (763) wifi:config NVS flash: enabled[0m
+[0;32mI (773) wifi:config nano formating: disabled[0m
+[0;32mI (773) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (783) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (783) wifi:Init management short buffer num: 32[0m
+[0;32mI (783) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (793) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (793) wifi:Init static rx buffer num: 10[0m
+[0;32mI (803) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (803) wifi_init: rx ba win: 6[0m
+[0;32mI (803) wifi_init: accept mbox: 6[0m
+[0;32mI (813) wifi_init: tcpip mbox: 32[0m
+[0;32mI (813) wifi_init: udp mbox: 6[0m
+[0;32mI (823) wifi_init: tcp mbox: 6[0m
+[0;32mI (823) wifi_init: tcp tx win: 5760[0m
+[0;32mI (823) wifi_init: tcp rx win: 5760[0m
+[0;32mI (833) wifi_init: tcp mss: 1440[0m
+[0;32mI (833) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (843) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (853) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (943) wifi:mode : softAP (08:a6:f7:ab:3c:0d)[0m
+[0;32mI (943) wifi:Total power save buffer number: 16[0m
+[0;32mI (943) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (943) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (953) WebSetup-TASK: WiFi AP started with SSID: ESP32-Config[0m
+[0;32mI (953) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (963) WebSetup-TASK: mDNS responder started with hostname: iot-esp32.local[0m
+[0;32mI (28003) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (28003) wifi:station: 7c:c2:c6:1b:75:17 join, AID=1, bgn, 40U[0m
+[0;32mI (28223) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (30923) wifi:<ba-add>idx:2 (ifx:1, 7c:c2:c6:1b:75:17), tid:0, ssn:101, winSize:64[0m
+[0;32mI (45893) WebSetup-TASK: File not found[0m
+[0;33mW (45893) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (45903) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (47073) WebSetup-TASK: File not found[0m
+[0;33mW (47073) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (47083) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (50433) httpd_uri: httpd_uri: URI '/' not found[0m
+[0;33mW (50433) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (53533) httpd_uri: httpd_uri: URI '/' not found[0m
+[0;33mW (53533) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (3088523) httpd_uri: httpd_uri: URI '/' not found[0m
+[0;33mW (3088523) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (3638203) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m

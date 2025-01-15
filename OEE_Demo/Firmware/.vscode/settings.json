@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "mbcontroller.h": "c",
+        "mfm384.h": "c",
+        "d700.h": "c",
+        "compressor_ag37a.h": "c"
+    }
+}

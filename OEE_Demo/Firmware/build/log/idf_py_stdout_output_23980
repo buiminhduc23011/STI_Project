@@ -1,0 +1,5272 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan 13 2025 09:39:59[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00011000 00019000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0002a000 00002000[0m
+[0;32mI (84) boot:  2 phy_init         RF data          01 01 0002c000 00001000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00030000 001a9000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 001e0000 001a9000[0m
+[0;32mI (107) boot:  5 ot_storage       Unknown data     01 3a 00389000 00002000[0m
+[0;32mI (114) boot: End of partition table[0m
+[0;32mI (118) boot: No factory image, trying OTA 0[0m
+[0;32mI (123) esp_image: segment 0: paddr=00030020 vaddr=3f400020 size=2a9c4h (174532) map[0m
+[0;32mI (192) esp_image: segment 1: paddr=0005a9ec vaddr=3ffb0000 size=04180h ( 16768) load[0m
+[0;32mI (198) esp_image: segment 2: paddr=0005eb74 vaddr=40080000 size=014a4h (  5284) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=bdb48h (777032) map[0m
+[0;32mI (472) esp_image: segment 4: paddr=0011db70 vaddr=400814a4 size=1817ch ( 98684) load[0m
+[0;32mI (524) boot: Loaded app from partition at offset 0x30000[0m
+[0;32mI (589) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (589) boot: Disabling RNG early entropy source...[0m
+[0;32mI (600) cpu_start: Multicore app[0m
+[0;32mI (609) cpu_start: Pro cpu start user code[0m
+[0;32mI (609) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (609) app_init: Application information:[0m
+[0;32mI (612) app_init: Project name:     SCADA_GUNZE_20250113_093927[0m
+[0;32mI (618) app_init: App version:      1.0.2_20250113_093927[0m
+[0;32mI (624) app_init: Compile time:     Jan 13 2025 09:39:47[0m
+[0;32mI (630) app_init: ELF file SHA256:  9a1bddfc1...[0m
+[0;32mI (636) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (641) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (645) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (650) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (655) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (662) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (668) heap_init: At 3FFB93F0 len 00026C10 (155 KiB): DRAM[0m
+[0;32mI (675) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (681) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (687) heap_init: At 40099620 len 000069E0 (26 KiB): IRAM[0m
+[0;32mI (695) spi_flash: detected chip: generic[0m
+[0;32mI (698) spi_flash: flash io: dio[0m
+[0;32mI (703) main_task: Started on CPU0[0m
+[0;32mI (713) main_task: Calling app_main()[0m
+[0;32mI (713) MAIN-TASK: ----------------Initializing----------------[0m
+[0;32mI (733) NVS: Hoan thanh
+[0m
+[0;32mI (733) uart: ESP_INTR_FLAG_IRAM fla[0;32mI (743) UART-TASK: Hello[0m
+[0;32mI (743) UART-TASK: UART initialized successfully[0m
+[0;32mI (743) WebSetup-TASK: Initializing SPIFFS[0m
+[0;31mE (743) SPIFFS: spiffs partition could not be found[0m
+[0;31mE (743) WebSetup-TASK: Failed to find SPIFFS partition[0m
+[0;32mI (763) wifi:wifi driver task: 3ffc4a64, prio:23, stack:6656, core=0[0m
+[0;32mI (763) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (763) wifi:wifi certification version: v7.0[0m
+[0;32mI (763) wifi:config NVS flash: enabled[0m
+[0;32mI (773) wifi:config nano formating: disabled[0m
+[0;32mI (773) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (783) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (783) wifi:Init management short buffer num: 32[0m
+[0;32mI (783) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (793) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (793) wifi:Init static rx buffer num: 10[0m
+[0;32mI (803) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (803) wifi_init: rx ba win: 6[0m
+[0;32mI (803) wifi_init: accept mbox: 6[0m
+[0;32mI (813) wifi_init: tcpip mbox: 32[0m
+[0;32mI (813) wifi_init: udp mbox: 6[0m
+[0;32mI (823) wifi_init: tcp mbox: 6[0m
+[0;32mI (823) wifi_init: tcp tx win: 5760[0m
+[0;32mI (823) wifi_init: tcp rx win: 5760[0m
+[0;32mI (833) wifi_init: tcp mss: 1440[0m
+[0;32mI (833) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (843) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (853) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (953) wifi:mode : softAP (08:a6:f7:ab:3c:0d)[0m
+[0;32mI (963) wifi:Total power save buffer number: 16[0m
+[0;32mI (963) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (963) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (963) WebSetup-TASK: WiFi AP started with SSID: ESP32-Config[0m
+[0;32mI (963) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (983) WebSetup-TASK: mDNS responder started with hostname: iot-esp32.local[0m
+[0;32mI (28293) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (28303) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (28573) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:12, winSize:64[0m
+[0;32mI (28743) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;33mW (44423) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (44433) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (45863) WebSetup-TASK: File not found[0m
+[0;33mW (45863) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (45873) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (47693) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (47693) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;33mW (47733) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (47733) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;33mW (47783) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (47783) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;33mW (48663) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (48673) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;33mW (49623) httpd_parse: parse_block: request URI/header too long[0m
+[0;33mW (49623) httpd_txrx: httpd_resp_send_err: 431 Request Header Fields Too Large - Header fields are too long[0m
+[0;32mI (100663) UART-TASK: uart[0] event:[0m
+[0;32mI (100663) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (100663) UART-TASK: uart count : 1[0m
+[0;32mI (100663) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (100673) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (112233) UART-TASK: uart[0] event:[0m
+[0;32mI (112243) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (112243) UART-TASK: uart count : 1[0m
+[0;32mI (112243) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (112243) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (114753) UART-TASK: uart[0] event:[0m
+[0;32mI (114753) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (114763) UART-TASK: uart count : 1[0m
+[0;32mI (114763) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (114763) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (115163) UART-TASK: uart[0] event:[0m
+[0;32mI (115163) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (115163) UART-TASK: uart count : 1[0m
+[0;32mI (115173) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (115173) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (115373) UART-TASK: uart[0] event:[0m
+[0;32mI (115373) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (115373) UART-TASK: uart count : 1[0m
+[0;32mI (115373) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (115383) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (115573) UART-TASK: uart[0] event:[0m
+[0;32mI (115573) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (115573) UART-TASK: uart count : 1[0m
+[0;32mI (115583) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (115583) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (116483) UART-TASK: uart[0] event:[0m
+[0;32mI (116483) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (116483) UART-TASK: uart count : 1[0m
+[0;32mI (116493) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (116493) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (116693) UART-TASK: uart[0] event:[0m
+[0;32mI (116693) UART-TASK: Received data: http:[0m
+[0;32mI (116693) UART-TASK: uart count : 1[0m
+[0;32mI (116693) UART-TASK: Header : http:[0m
+[0;32mI (116693) UART-TASK: Unknown command: http:[0m
+[0;32mI (116703) UART-TASK: uart[0] event:[0m
+[0;32mI (116703) UART-TASK: Received data: //iot-esp32.l[0m
+[0;32mI (116713) UART-TASK: uart count : 1[0m
+[0;32mI (116713) UART-TASK: Header : //iot-esp32.l[0m
+[0;32mI (116723) UART-TASK: Unknown command: //iot-esp32.l[0m
+[0;32mI (116723) UART-TASK: uart[0] event:[0m
+[0;32mI (116733) UART-TASK: Received data: ocal[0m
+[0;32mI (116733) UART-TASK: uart count : 1[0m
+[0;32mI (116743) UART-TASK: Header : ocal[0m
+[0;32mI (116743) UART-TASK: Unknown command: ocal[0m
+[0;32mI (116903) UART-TASK: uart[0] event:[0m
+[0;32mI (116903) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (116903) UART-TASK: uart count : 1[0m
+[0;32mI (116913) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (116913) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (117113) UART-TASK: uart[0] event:[0m
+[0;32mI (117113) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (117113) UART-TASK: uart count : 1[0m
+[0;32mI (117113) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (117123) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (117313) UART-TASK: uart[0] event:[0m
+[0;32mI (117313) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (117313) UART-TASK: uart count : 1[0m
+[0;32mI (117323) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (117323) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (117523) UART-TASK: uart[0] event:[0m
+[0;32mI (117523) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (117523) UART-TASK: uart count : 1[0m
+[0;32mI (117523) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (117533) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (117733) UART-TASK: uart[0] event:[0m
+[0;32mI (117733) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (117733) UART-TASK: uart count : 1[0m
+[0;32mI (117733) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (117743) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (117933) UART-TASK: uart[0] event:[0m
+[0;32mI (117933) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (117933) UART-TASK: uart count : 1[0m
+[0;32mI (117943) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (117943) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (118143) UART-TASK: uart[0] event:[0m
+[0;32mI (118143) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (118143) UART-TASK: uart count : 1[0m
+[0;32mI (118143) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (118153) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (118353) UART-TASK: uart[0] event:[0m
+[0;32mI (118353) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (118353) UART-TASK: uart count : 1[0m
+[0;32mI (118353) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (118363) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (118563) UART-TASK: uart[0] event:[0m
+[0;32mI (118563) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (118563) UART-TASK: uart count : 1[0m
+[0;32mI (118563) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (118573) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (118763) UART-TASK: uart[0] event:[0m
+[0;32mI (118763) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (118763) UART-TASK: uart count : 1[0m
+[0;32mI (118773) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (118773) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (118973) UART-TASK: uart[0] event:[0m
+[0;32mI (118973) UART-TASK: Received data: http://i[0m
+[0;32mI (118973) UART-TASK: uart count : 1[0m
+[0;32mI (118973) UART-TASK: Header : http://i[0m
+[0;32mI (118983) UART-TASK: Unknown command: http://i[0m
+[0;32mI (118983) UART-TASK: uart[0] event:[0m
+[0;32mI (118993) UART-TASK: Received data: o[0m
+[0;32mI (118993) UART-TASK: uart count : 1[0m
+[0;32mI (118993) UART-TASK: Header : o[0m
+[0;32mI (119003) UART-TASK: Unknown command: o[0m
+[0;32mI (119003) UART-TASK: uart[0] event:[0m
+[0;32mI (119013) UART-TASK: Received data: t-esp32[0m
+[0;32mI (119013) UART-TASK: uart count : 1[0m
+[0;32mI (119023) UART-TASK: Header : t-esp32[0m
+[0;32mI (119023) UART-TASK: Unknown command: t-esp32[0m
+[0;32mI (119033) UART-TASK: uart[0] event:[0m
+[0;32mI (119033) UART-TASK: Received data: .local[0m
+[0;32mI (119043) UART-TASK: uart count : 1[0m
+[0;32mI (119043) UART-TASK: Header : .local[0m
+[0;32mI (119043) UART-TASK: Unknown command: .local[0m
+[0;32mI (119183) UART-TASK: uart[0] event:[0m
+[0;32mI (119183) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (119183) UART-TASK: uart count : 1[0m
+[0;32mI (119183) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (119193) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (119393) UART-TASK: uart[0] event:[0m
+[0;32mI (119393) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (119393) UART-TASK: uart count : 1[0m
+[0;32mI (119393) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (119403) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (119593) UART-TASK: uart[0] event:[0m
+[0;32mI (119593) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (119593) UART-TASK: uart count : 1[0m
+[0;32mI (119603) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (119603) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (119803) UART-TASK: uart[0] event:[0m
+[0;32mI (119803) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (119803) UART-TASK: uart count : 1[0m
+[0;32mI (119803) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (119813) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (120003) UART-TASK: uart[0] event:[0m
+[0;32mI (120003) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (120003) UART-TASK: uart count : 1[0m
+[0;32mI (120013) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (120013) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (120313) UART-TASK: uart[0] event:[0m
+[0;32mI (120313) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (120313) UART-TASK: uart count : 1[0m
+[0;32mI (120313) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (120323) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (131473) UART-TASK: uart[0] event:[0m
+[0;32mI (131473) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (131473) UART-TASK: uart count : 1[0m
+[0;32mI (131483) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (131483) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (131683) UART-TASK: uart[0] event:[0m
+[0;32mI (131683) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (131683) UART-TASK: uart count : 1[0m
+[0;32mI (131683) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (131693) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (131893) UART-TASK: uart[0] event:[0m
+[0;32mI (131893) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (131893) UART-TASK: uart count : 1[0m
+[0;32mI (131893) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (131903) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (132093) UART-TASK: uart[0] event:[0m
+[0;32mI (132093) UART-TASK: Received data: http://iot-esp32.local[0m
+[0;32mI (132093) UART-TASK: uart count : 1[0m
+[0;32mI (132093) UART-TASK: Header : http://iot-esp32.local[0m
+[0;32mI (132103) UART-TASK: Unknown command: http://iot-esp32.local[0m
+[0;32mI (141573) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3ffcf8c8[0m
+[0;32mI (141573) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (141583) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (145883) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (145883) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (145933) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (146053) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:9, winSize:64[0m
+[0;32mI (146273) wifi:[ADDBA]RX DELBA, reason:37, delete tid:0, initiator:1(originator)[0m
+[0;32mI (146273) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (146273) wifi:[ADDBA]RX DELBA, reason:37, delete tid:0, initiator:1(originator)[0m
+[0;32mI (147843) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (149763) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:73, winSize:64[0m
+[0;32mI (166463) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3ffcf8c8[0m
+[0;32mI (166463) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (166473) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (169513) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (169513) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (169553) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (169683) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:12, winSize:64[0m
+[0;32mI (174553) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3ffd009c[0m
+[0;32mI (174553) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (174563) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (177863) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (177863) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (177913) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (178043) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:11, winSize:64[0m
+[0;32mI (375773) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3ffd009c[0m
+[0;32mI (375773) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (375773) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (378633) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (378643) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (378673) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (378903) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:18, winSize:64[0m
+[0;32mI (395733) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3ffd009c[0m
+[0;32mI (395733) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (395743) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (398773) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (398773) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (398803) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (398903) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:9, winSize:64[0m
+[0;32mI (402863) wifi:starting SA query procedure with STA(98:59:7a:b1:8f:50)[0m
+[0;32mI (402863) wifi:Send SA Query req with transaction id 53ea[0m
+[0;32mI (403063) wifi:Send SA Query req with transaction id 53eb[0m
+[0;32mI (403263) wifi:Send SA Query req with transaction id 53ec[0m
+[0;32mI (403463) wifi:Send SA Query req with transaction id 53ed[0m
+[0;32mI (403663) wifi:Send SA Query req with transaction id 53ee[0m
+[0;32mI (403863) wifi:Send SA Query req with transaction id 53ef[0m
+[0;32mI (403883) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (403923) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 209, bss_flags is 756835, bss:0x3ffd009c[0m
+[0;32mI (403923) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (403923) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (406843) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (406843) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (406893) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (406943) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:9, winSize:64[0m
+[0;32mI (411183) wifi:starting SA query procedure with STA(98:59:7a:b1:8f:50)[0m
+[0;32mI (411183) wifi:Send SA Query req with transaction id 717e[0m
+[0;32mI (411383) wifi:Send SA Query req with transaction id 717f[0m
+[0;32mI (411583) wifi:Send SA Query req with transaction id 7180[0m
+[0;32mI (411783) wifi:Send SA Query req with transaction id 7181[0m
+[0;32mI (411983) wifi:Send SA Query req with transaction id 7182[0m
+[0;32mI (412183) wifi:Send SA Query req with transaction id 7183[0m
+[0;32mI (412213) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (412243) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 209, bss_flags is 756835, bss:0x3ffd009c[0m
+[0;32mI (412253) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (412253) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (414993) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (414993) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (415053) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (415093) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:8, winSize:64[0m
+[0;32mI (415293) wifi:[ADDBA]RX DELBA, reason:37, delete tid:0, initiator:1(originator)[0m
+[0;32mI (415303) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (415303) wifi:[ADDBA]RX DELBA, reason:37, delete tid:0, initiator:1(originator)[0m
+[0;32mI (419363) wifi:starting SA query procedure with STA(98:59:7a:b1:8f:50)[0m
+[0;32mI (419363) wifi:Send SA Query req with transaction id 48f6[0m
+[0;32mI (419563) wifi:Send SA Query req with transaction id 48f7[0m
+[0;32mI (419763) wifi:Send SA Query req with transaction id 48f8[0m
+[0;32mI (419963) wifi:Send SA Query req with transaction id 48f9[0m
+[0;32mI (420163) wifi:Send SA Query req with transaction id 48fa[0m
+[0;32mI (420363) wifi:Send SA Query req with transaction id 48fb[0m
+[0;32mI (420393) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (420563) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 209, bss_flags is 756851, bss:0x3ffd009c[0m
+[0;32mI (420573) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (423123) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (423123) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (423153) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (423303) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:11, winSize:64[0m
+[0;32mI (2427643) WebSetup-TASK: File not found[0m
+[0;33mW (2427643) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (2427653) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (2893453) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3ffcfb08[0m
+[0;32mI (2893463) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2893463) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (2897753) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2897753) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (2897793) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (2897933) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:13, winSize:64[0m
+[0;32mI (3149873) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3ffd009c[0m
+[0;32mI (3149873) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3149883) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (3267343) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3267343) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (3267403) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (3267523) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:10, winSize:64[0m
+[0;32mI (3267723) wifi:[ADDBA]RX DELBA, reason:37, delete tid:0, initiator:1(originator)[0m
+[0;32mI (3267723) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (3267723) wifi:[ADDBA]RX DELBA, reason:37, delete tid:0, initiator:1(originator)[0m
+[0;32mI (3276273) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:59, winSize:64[0m
+[0;32mI (6877663) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (7650453) wifi:starting SA query procedure with STA(98:59:7a:b1:8f:50)[0m
+[0;32mI (7650453) wifi:Send SA Query req with transaction id d778[0m
+[0;32mI (7650653) wifi:Send SA Query req with transaction id d779[0m
+[0;32mI (7650853) wifi:Send SA Query req with transaction id d77a[0m
+[0;32mI (7651053) wifi:Send SA Query req with transaction id d77b[0m
+[0;32mI (7651253) wifi:Send SA Query req with transaction id d77c[0m
+[0;32mI (7651453) wifi:Send SA Query req with transaction id d77d[0m
+[0;32mI (7651483) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (7651523) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 209, bss_flags is 756835, bss:0x3ffd009c[0m
+[0;32mI (7651523) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7651533) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (7656083) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7656083) wifi:station: 98:59:7a:b1:8f:50 join, AID=1, bgn, 40U[0m
+[0;32mI (7656123) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (7656153) wifi:<ba-add>idx:2 (ifx:1, 98:59:7a:b1:8f:50), tid:0, ssn:8, winSize:64[0m
+[0;32mI (8077363) wifi:station: 98:59:7a:b1:8f:50 leave, AID = 1, reason = 1, bss_flags is 756835, bss:0x3ffcf8c8[0m
+[0;32mI (8077363) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8077373) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (57282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (57382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (57482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (57582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (57682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (57782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (57882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (57982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (58082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (58102) wifi:state: auth -> init (200)[0m
+[0;32mI (58102) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (58102) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (58122) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (58122) wifi:state: init -> auth (b0)[0m
+[0;32mI (58182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (58282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (58382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (58482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (58582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (58682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (58782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (58882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (58982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (59082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (59122) wifi:state: auth -> init (200)[0m
+[0;32mI (59122) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (59132) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (59182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (59282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (59382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (59482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (59582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (59682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (59782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (59882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (59982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (60082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (60182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (60282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (60382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (60482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (60582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (60682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (60782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (60882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (60982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (61082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (61182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (61282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (61382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (61482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (61542) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (61582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (61602) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (61602) wifi:state: init -> auth (b0)[0m
+[0;32mI (61682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (61782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (61882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (61982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (62082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (62182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (62282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (62382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (62482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (62582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (62602) wifi:state: auth -> init (200)[0m
+[0;32mI (62602) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (62602) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (62632) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (62632) wifi:state: init -> auth (b0)[0m
+[0;32mI (62682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (62782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (62882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (62982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (63082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (63182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (63282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (63382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (63482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (63582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (63632) wifi:state: auth -> init (200)[0m
+[0;32mI (63632) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (63632) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (63682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (63782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (63812) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (63812) wifi:state: init -> auth (b0)[0m
+[0;32mI (63882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (63982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (64082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (64182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (64282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (64382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (64482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (64582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (64682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (64782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (64822) wifi:state: auth -> init (200)[0m
+[0;32mI (64822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (64822) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (64842) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (64842) wifi:state: init -> auth (b0)[0m
+[0;32mI (64882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (64982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (65082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (65182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (65282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (65382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (65482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (65582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (65682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (65782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (65842) wifi:state: auth -> init (200)[0m
+[0;32mI (65842) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (65842) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (65882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (65982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (66082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (66182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (66282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (66382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (66482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (66582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (66682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (66782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (66882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (66982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (67082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (67182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (67282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (67382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (67482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (67582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (67682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (67782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (67882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (67982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (68082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (68182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (68262) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (68282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (68312) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (68322) wifi:state: init -> auth (b0)[0m
+[0;32mI (68382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (68482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (68582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (68682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (68782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (68882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (68982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (69082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (69182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (69282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (69322) wifi:state: auth -> init (200)[0m
+[0;32mI (69322) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (69322) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (69342) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (69342) wifi:state: init -> auth (b0)[0m
+[0;32mI (69382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (69482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (69582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (69682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (69782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (69882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (69982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (70082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (70182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (70282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (70342) wifi:state: auth -> init (200)[0m
+[0;32mI (70342) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (70352) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (70382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (70482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (70582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (70682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (70782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (70882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (70982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (71082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (71182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (71282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (71382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (71482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (71582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (71632) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (71632) wifi:state: init -> auth (b0)[0m
+[0;32mI (71682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (71782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (71882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (71982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (72082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (72182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (72282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (72382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (72482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (72582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (72632) wifi:state: auth -> init (200)[0m
+[0;32mI (72632) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (72642) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (72652) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (72652) wifi:state: init -> auth (b0)[0m
+[0;32mI (72682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (72782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (72882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (72982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (73082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (73182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (73282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (73382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (73482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (73582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (73652) wifi:state: auth -> init (200)[0m
+[0;32mI (73652) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (73662) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (73682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (73782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (73882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (73982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (74082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (74182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (74282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (74382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (74482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (74582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (74682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (74782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (74882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (74982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (75082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (75182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (75282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (75382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (75482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (75582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (75682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (75782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (75882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (75982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (76072) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (76082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (76152) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (76152) wifi:state: init -> auth (b0)[0m
+[0;32mI (76182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (76282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (76382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (76482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (76582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (76682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (76782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (76882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (76982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (77082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (77152) wifi:state: auth -> init (200)[0m
+[0;32mI (77152) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (77152) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (77182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (77262) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (77262) wifi:state: init -> auth (b0)[0m
+[0;32mI (77282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (77382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (77482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (77582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (77682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (77782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (77882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (77982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (78082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (78182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (78262) wifi:state: auth -> init (200)[0m
+[0;32mI (78262) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (78262) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (78282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (78382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (78452) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (78452) wifi:state: init -> auth (b0)[0m
+[0;32mI (78482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (78582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (78682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (78782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (78882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (78982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (79082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (79182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (79282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (79382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (79452) wifi:state: auth -> init (200)[0m
+[0;32mI (79452) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (79452) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (79472) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (79472) wifi:state: init -> auth (b0)[0m
+[0;32mI (79482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (79582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (79682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (79782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (79882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (79982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (80082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (80182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (80282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (80382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (80472) wifi:state: auth -> init (200)[0m
+[0;32mI (80472) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (80482) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (80482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (80582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (80682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (80782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (80882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (80982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (81082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (81182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (81282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (81382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (81482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (81582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (81682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (81782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (81882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (81982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (82082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (82182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (82282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (82382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (82482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (82582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (82682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (82782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (82882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (82892) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (82952) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (82952) wifi:state: init -> auth (b0)[0m
+[0;32mI (82982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (83082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (83182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (83282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (83382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (83482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (83582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (83682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (83782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (83882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (83952) wifi:state: auth -> init (200)[0m
+[0;32mI (83962) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (83962) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (83972) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (83972) wifi:state: init -> auth (b0)[0m
+[0;32mI (83982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (84082) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (84182) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (84282) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (84382) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (84482) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (84582) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (84682) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (84782) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (84882) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (84972) wifi:state: auth -> init (200)[0m
+[0;32mI (84982) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (84982) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (84982) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (85092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (85192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (85292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (85392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (85492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (85592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (85692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (85792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (85892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (85992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (86092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (86192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (86262) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (86272) wifi:state: init -> auth (b0)[0m
+[0;32mI (86292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (86392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (86492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (86592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (86692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (86792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (86892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (86992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (87092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (87192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (87272) wifi:state: auth -> init (200)[0m
+[0;32mI (87272) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (87272) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (87292) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (87292) wifi:state: init -> auth (b0)[0m
+[0;32mI (87292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (87392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (87492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (87592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (87692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (87792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (87892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (87992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (88092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (88192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (88292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (88292) wifi:state: auth -> init (200)[0m
+[0;32mI (88292) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (88292) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (88392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (88492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (88592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (88692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (88792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (88892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (88992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (89092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (89192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (89292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (89392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (89492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (89592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (89692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (89792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (89892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (89992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (90092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (90192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (90292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (90392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (90492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (90592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (90692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (90712) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (90772) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (90772) wifi:state: init -> auth (b0)[0m
+[0;32mI (90792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (90892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (90992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (91092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (91192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (91292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (91392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (91492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (91592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (91692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (91772) wifi:state: auth -> init (200)[0m
+[0;32mI (91772) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (91772) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (91792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (91892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (91892) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (91892) wifi:state: init -> auth (b0)[0m
+[0;32mI (91992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (92092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (92192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (92292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (92392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (92492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (92592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (92692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (92792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (92892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (92892) wifi:state: auth -> init (200)[0m
+[0;32mI (92892) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (92892) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (92992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (93082) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (93082) wifi:state: init -> auth (b0)[0m
+[0;32mI (93092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (93192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (93292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (93392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (93492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (93592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (93692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (93792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (93892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (93992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (94082) wifi:state: auth -> init (200)[0m
+[0;32mI (94082) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (94092) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (94092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (94112) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (94112) wifi:state: init -> auth (b0)[0m
+[0;32mI (94192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (94292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (94392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (94492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (94592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (94692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (94792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (94892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (94992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (95092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (95112) wifi:state: auth -> init (200)[0m
+[0;32mI (95112) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (95112) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (95192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (95292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (95392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (95492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (95592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (95692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (95792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (95892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (95992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (96092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (96192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (96292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (96392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (96492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (96592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (96692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (96792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (96892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (96992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (97092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (97192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (97292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (97392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (97492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (97532) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (97582) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (97582) wifi:state: init -> auth (b0)[0m
+[0;32mI (97592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (97692) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (97792) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (97892) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (97992) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (98092) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (98192) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (98292) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (98392) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (98492) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (98592) wifi:state: auth -> init (200)[0m
+[0;32mI (98592) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (98592) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (98592) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (98612) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (98612) wifi:state: init -> auth (b0)[0m
+[0;32mI (98702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (98802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (98902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (99002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (99102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (99202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (99302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (99402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (99502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (99602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (99612) wifi:state: auth -> init (200)[0m
+[0;32mI (99612) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (99612) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (99702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (99802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (99902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (100002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (100102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (100202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (100302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (100402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (100502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (100602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (100702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (100802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (100902) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (100902) wifi:state: init -> auth (b0)[0m
+[0;32mI (100902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (101902) wifi:state: auth -> init (200)[0m
+[0;32mI (101902) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (101902) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (101922) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (101922) wifi:state: init -> auth (b0)[0m
+[0;32mI (102002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (102102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (102202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (102302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (102402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (102502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (102602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (102702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (102802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (102902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (102922) wifi:state: auth -> init (200)[0m
+[0;32mI (102922) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (102932) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (103002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (103102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (103202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (103302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (103402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (103502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (103602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (103702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (103802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (103902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (104002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (104102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (104202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (104302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (104402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (104502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (104602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (104702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (104802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (104902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (105002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (105102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (105202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (105302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (105342) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (105402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (105502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (105572) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (105572) wifi:state: init -> auth (b0)[0m
+[0;32mI (105602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (105702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (105802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (105902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (106002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (106102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (106202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (106302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (106402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (106502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (106572) wifi:state: auth -> init (200)[0m
+[0;32mI (106572) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (106572) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (106592) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (106592) wifi:state: init -> auth (b0)[0m
+[0;32mI (106602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (106702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (106802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (106902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (107002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (107102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (107202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (107302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (107402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (107502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (107592) wifi:state: auth -> init (200)[0m
+[0;32mI (107592) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (107592) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (107602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (107702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (107802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (107902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (108002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (108102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (108202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (108302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (108402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (108502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (108602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (108702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (108802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (108882) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (108882) wifi:state: init -> auth (b0)[0m
+[0;32mI (108902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109882) wifi:state: auth -> init (200)[0m
+[0;32mI (109882) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (109882) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (109902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (109902) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (109912) wifi:state: init -> auth (b0)[0m
+[0;32mI (110002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (110102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (110202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (110302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (110402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (110502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (110602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (110702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (110802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (110902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (110912) wifi:state: auth -> init (200)[0m
+[0;32mI (110912) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (110912) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (111002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (111102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (111202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (111302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (111402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (111502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (111602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (111702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (111802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (111902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (112002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (112102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (112202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (112302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (112402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (112502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (112602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (112702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (112802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (112902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (113002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (113102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (113202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (113302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (113332) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (113382) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (113382) wifi:state: init -> auth (b0)[0m
+[0;32mI (113402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (113502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (113602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (113702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (113802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (113902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (114002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (114102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (114202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (114302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (114382) wifi:state: auth -> init (200)[0m
+[0;32mI (114382) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (114392) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (114402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (114412) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (114412) wifi:state: init -> auth (b0)[0m
+[0;32mI (114502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (114602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (114702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (114802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (114902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (115002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (115102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (115202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (115302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (115402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (115412) wifi:state: auth -> init (200)[0m
+[0;32mI (115412) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (115412) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (115502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (115592) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (115602) wifi:state: init -> auth (b0)[0m
+[0;32mI (115602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (115702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (115802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (115902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (116002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (116102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (116202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (116302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (116402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (116502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (116602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (116602) wifi:state: auth -> init (200)[0m
+[0;32mI (116602) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (116602) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (116622) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (116622) wifi:state: init -> auth (b0)[0m
+[0;32mI (116702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (116802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (116902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (117002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (117102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (117202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (117302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (117402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (117502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (117602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (117622) wifi:state: auth -> init (200)[0m
+[0;32mI (117622) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (117622) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (117702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (117802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (117902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (118002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (118102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (118202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (118302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (118402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (118502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (118602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (118702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (118802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (118902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (119002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (119102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (119202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (119302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (119402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (119502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (119602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (119702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (119802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (119902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (120002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (120042) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (120102) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (120102) wifi:state: init -> auth (b0)[0m
+[0;32mI (120102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (120202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (120302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (120402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (120502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (120602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (120702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (120802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (120902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (121002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (121102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (121102) wifi:state: auth -> init (200)[0m
+[0;32mI (121102) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (121102) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (121122) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (121122) wifi:state: init -> auth (b0)[0m
+[0;32mI (121202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (121302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (121402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (121502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (121602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (121702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (121802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (121902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (122002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (122102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (122122) wifi:state: auth -> init (200)[0m
+[0;32mI (122132) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (122132) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (122202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (122302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (122402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (122502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (122602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (122702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (122802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (122902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (123002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (123102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (123202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (123302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (123402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (123412) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (123412) wifi:state: init -> auth (b0)[0m
+[0;32mI (123502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (123602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (123702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (123802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (123902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (124002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (124102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (124202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (124302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (124402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (124412) wifi:state: auth -> init (200)[0m
+[0;32mI (124412) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (124422) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (124442) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (124442) wifi:state: init -> auth (b0)[0m
+[0;32mI (124502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (124602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (124702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (124802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (124902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (125002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (125102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (125202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (125302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (125402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (125442) wifi:state: auth -> init (200)[0m
+[0;32mI (125442) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (125442) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (125502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (125602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (125702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (125802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (125902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (126002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (126102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (126202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (126302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (126402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (126502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (126602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (126702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (126802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (126902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127862) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (127902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (127912) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (127922) wifi:state: init -> auth (b0)[0m
+[0;32mI (128002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (128102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (128202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (128302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (128402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (128502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (128602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (128702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (128802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (128902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (128922) wifi:state: auth -> init (200)[0m
+[0;32mI (128922) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (128922) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (128942) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (128942) wifi:state: init -> auth (b0)[0m
+[0;32mI (129002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (129102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (129202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (129302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (129402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (129502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (129602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (129702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (129802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (129902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (129942) wifi:state: auth -> init (200)[0m
+[0;32mI (129942) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (129942) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (130002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (130102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (130132) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (130132) wifi:state: init -> auth (b0)[0m
+[0;32mI (130202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (130302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (130402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (130502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (130602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (130702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (130802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (130902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (131002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (131102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (131132) wifi:state: auth -> init (200)[0m
+[0;32mI (131132) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (131132) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (131152) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (131152) wifi:state: init -> auth (b0)[0m
+[0;32mI (131202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (131302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (131402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (131502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (131602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (131702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (131802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (131902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (132002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (132102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (132152) wifi:state: auth -> init (200)[0m
+[0;32mI (132152) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (132162) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (132202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (132302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (132402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (132502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (132602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (132702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (132802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (132902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (133002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (133102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (133202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (133302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (133402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (133502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (133602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (133702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (133802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (133902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (134002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (134102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (134202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (134302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (134402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (134502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (134572) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (134602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (134632) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (134632) wifi:state: init -> auth (b0)[0m
+[0;32mI (134702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (134802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (134902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (135002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (135102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (135202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (135302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (135402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (135502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (135602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (135632) wifi:state: auth -> init (200)[0m
+[0;32mI (135632) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (135632) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (135652) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (135662) wifi:state: init -> auth (b0)[0m
+[0;32mI (135702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (135802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (135902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (136002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (136102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (136202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (136302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (136402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (136502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (136602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (136662) wifi:state: auth -> init (200)[0m
+[0;32mI (136662) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (136662) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (136702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (136802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (136902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (137942) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (137952) wifi:state: init -> auth (b0)[0m
+[0;32mI (138002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (138102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (138202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (138302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (138402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (138502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (138602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (138702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (138802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (138902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (138952) wifi:state: auth -> init (200)[0m
+[0;32mI (138952) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (138952) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (138972) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (138972) wifi:state: init -> auth (b0)[0m
+[0;32mI (139002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (139102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (139202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (139302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (139402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (139502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (139602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (139702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (139802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (139902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (139972) wifi:state: auth -> init (200)[0m
+[0;32mI (139972) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (139972) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (140002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (140102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (140202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (140302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (140402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (140502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (140602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (140702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (140802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (140902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (141002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (141102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (141202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (141302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (141402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (141502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (141602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (141702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (141802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (141902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (142002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (142102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (142202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (142302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (142392) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (142402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (142442) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (142452) wifi:state: init -> auth (b0)[0m
+[0;32mI (142502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (142602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (142702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (142802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (142902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (143002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (143102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (143202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (143302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (143402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (143452) wifi:state: auth -> init (200)[0m
+[0;32mI (143452) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (143452) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (143472) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (143472) wifi:state: init -> auth (b0)[0m
+[0;32mI (143502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (143602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (143702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (143802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (143902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (144002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (144102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (144202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (144302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (144402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (144472) wifi:state: auth -> init (200)[0m
+[0;32mI (144472) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (144472) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (144502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (144602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (144662) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (144662) wifi:state: init -> auth (b0)[0m
+[0;32mI (144702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (144802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (144902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (145002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (145102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (145202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (145302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (145402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (145502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (145602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (145662) wifi:state: auth -> init (200)[0m
+[0;32mI (145662) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (145662) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (145682) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (145682) wifi:state: init -> auth (b0)[0m
+[0;32mI (145702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (145802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (145902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (146002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (146102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (146202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (146302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (146402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (146502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (146602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (146692) wifi:state: auth -> init (200)[0m
+[0;32mI (146692) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (146692) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (146702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (146802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (146902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (147002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (147102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (147202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (147302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (147402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (147502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (147602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (147702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (147802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (147902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (148002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (148102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (148202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (148302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (148402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (148502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (148602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (148702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (148802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (148902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (149002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (149102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (149112) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (149162) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (149162) wifi:state: init -> auth (b0)[0m
+[0;32mI (149202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (149302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (149402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (149502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (149602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (149702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (149802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (149902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (150002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (150102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (150162) wifi:state: auth -> init (200)[0m
+[0;32mI (150162) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (150162) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (150192) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (150192) wifi:state: init -> auth (b0)[0m
+[0;32mI (150202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (150302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (150402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (150502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (150602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (150702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (150802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (150902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (151002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (151102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (151192) wifi:state: auth -> init (200)[0m
+[0;32mI (151192) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (151192) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (151202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (151302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (151402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (151502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (151602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (151702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (151802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (151902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (152002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (152102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (152202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (152302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (152402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (152482) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (152482) wifi:state: init -> auth (b0)[0m
+[0;32mI (152502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (152602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (152702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (152802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (152902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (153002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (153102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (153202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (153302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (153402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (153482) wifi:state: auth -> init (200)[0m
+[0;32mI (153482) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (153482) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (153502) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (153502) wifi:state: init -> auth (b0)[0m
+[0;32mI (153502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (153602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (153702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (153802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (153902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (154002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (154102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (154202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (154302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (154402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (154502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (154502) wifi:state: auth -> init (200)[0m
+[0;32mI (154502) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (154502) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (154602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (154702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (154802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (154902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (155002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (155102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (155202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (155302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (155402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (155502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (155602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (155702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (155802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (155902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (156922) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (156982) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (156982) wifi:state: init -> auth (b0)[0m
+[0;32mI (157002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (157102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (157202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (157302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (157402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (157502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (157602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (157702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (157802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (157902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (157982) wifi:state: auth -> init (200)[0m
+[0;32mI (157982) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (157982) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (158002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (158002) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (158002) wifi:state: init -> auth (b0)[0m
+[0;32mI (158102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (158202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (158302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (158402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (158502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (158602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (158702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (158802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (158902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (159002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (159002) wifi:state: auth -> init (200)[0m
+[0;32mI (159002) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (159012) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (159102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (159192) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (159192) wifi:state: init -> auth (b0)[0m
+[0;32mI (159202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (159302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (159402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (159502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (159602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (159702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (159802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (159902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (160002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (160102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (160192) wifi:state: auth -> init (200)[0m
+[0;32mI (160192) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (160192) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (160202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (160212) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (160222) wifi:state: init -> auth (b0)[0m
+[0;32mI (160302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (160402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (160502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (160602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (160702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (160802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (160902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (161002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (161102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (161202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (161222) wifi:state: auth -> init (200)[0m
+[0;32mI (161222) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (161222) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (161302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (161402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (161502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (161602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (161702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (161802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (161902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (162002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (162102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (162202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (162302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (162402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (162502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (162602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (162702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (162802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (162902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (163002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (163102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (163202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (163302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (163402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (163502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (163602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (163642) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (163692) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (163692) wifi:state: init -> auth (b0)[0m
+[0;32mI (163702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (163802) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (163902) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (164002) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (164102) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (164202) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (164302) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (164402) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (164502) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (164602) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (164692) wifi:state: auth -> init (200)[0m
+[0;32mI (164692) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (164702) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (164702) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (164722) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (164722) wifi:state: init -> auth (b0)[0m
+[0;32mI (164812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (164912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (165012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (165112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (165212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (165312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (165412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (165512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (165612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (165712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (165722) wifi:state: auth -> init (200)[0m
+[0;32mI (165722) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (165722) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (165812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (165912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (166012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (166112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (166212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (166312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (166412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (166512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (166612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (166712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (166812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (166912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (167012) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (167012) wifi:state: init -> auth (b0)[0m
+[0;32mI (167012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (167112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (167212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (167312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (167412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (167512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (167612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (167712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (167812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (167912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (168012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (168012) wifi:state: auth -> init (200)[0m
+[0;32mI (168012) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (168012) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (168032) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (168032) wifi:state: init -> auth (b0)[0m
+[0;32mI (168112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (168212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (168312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (168412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (168512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (168612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (168712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (168812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (168912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (169012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (169032) wifi:state: auth -> init (200)[0m
+[0;32mI (169032) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (169032) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (169112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (169212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (169312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (169412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (169512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (169612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (169712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (169812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (169912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (170012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (170112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (170212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (170312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (170412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (170512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (170612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (170712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (170812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (170912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (171012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (171112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (171212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (171312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (171412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (171452) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (171512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (171512) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (171512) wifi:state: init -> auth (b0)[0m
+[0;32mI (171612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (171712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (171812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (171912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (172012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (172112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (172212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (172312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (172412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (172512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (172512) wifi:state: auth -> init (200)[0m
+[0;32mI (172512) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (172512) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (172532) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (172532) wifi:state: init -> auth (b0)[0m
+[0;32mI (172612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (172712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (172812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (172912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (173012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (173112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (173212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (173312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (173412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (173512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (173542) wifi:state: auth -> init (200)[0m
+[0;32mI (173542) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (173542) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (173612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (173712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (173722) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (173722) wifi:state: init -> auth (b0)[0m
+[0;32mI (173812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (173912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (174012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (174112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (174212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (174312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (174412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (174512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (174612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (174712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (174722) wifi:state: auth -> init (200)[0m
+[0;32mI (174722) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (174732) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (174752) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (174752) wifi:state: init -> auth (b0)[0m
+[0;32mI (174812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (174912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (175012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (175112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (175212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (175312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (175412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (175512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (175612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (175712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (175752) wifi:state: auth -> init (200)[0m
+[0;32mI (175752) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (175752) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (175812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (175912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (176012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (176112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (176212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (176312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (176412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (176512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (176612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (176712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (176812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (176912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (177012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (177112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (177212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (177312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (177412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (177512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (177612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (177712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (177812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (177912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (178012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (178112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (178172) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (178212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (178222) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (178222) wifi:state: init -> auth (b0)[0m
+[0;32mI (178312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (178412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (178512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (178612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (178712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (178812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (178912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (179012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (179112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (179212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (179232) wifi:state: auth -> init (200)[0m
+[0;32mI (179232) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (179232) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (179252) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (179252) wifi:state: init -> auth (b0)[0m
+[0;32mI (179312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (179412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (179512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (179612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (179712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (179812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (179912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (180012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (180112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (180212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (180252) wifi:state: auth -> init (200)[0m
+[0;32mI (180252) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (180252) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (180312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (180412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (180512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (180612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (180712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (180812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (180912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (181012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (181112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (181212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (181312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (181412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (181512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (181542) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (181542) wifi:state: init -> auth (b0)[0m
+[0;32mI (181612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (181712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (181812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (181912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (182012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (182112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (182212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (182312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (182412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (182512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (182542) wifi:state: auth -> init (200)[0m
+[0;32mI (182542) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (182542) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (182562) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (182562) wifi:state: init -> auth (b0)[0m
+[0;32mI (182612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (182712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (182812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (182912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (183012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (183112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (183212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (183312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (183412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (183512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (183562) wifi:state: auth -> init (200)[0m
+[0;32mI (183572) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (183572) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (183612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (183712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (183812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (183912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (184012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (184112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (184212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (184312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (184412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (184512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (184612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (184712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (184812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (184912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (185982) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (186012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (186042) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (186042) wifi:state: init -> auth (b0)[0m
+[0;32mI (186112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (186212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (186312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (186412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (186512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (186612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (186712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (186812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (186912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (187012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (187042) wifi:state: auth -> init (200)[0m
+[0;32mI (187052) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (187052) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (187062) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (187062) wifi:state: init -> auth (b0)[0m
+[0;32mI (187112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (187212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (187312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (187412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (187512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (187612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (187712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (187812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (187912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (188012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (188072) wifi:state: auth -> init (200)[0m
+[0;32mI (188072) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (188072) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (188112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (188212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (188252) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (188252) wifi:state: init -> auth (b0)[0m
+[0;32mI (188312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (188412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (188512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (188612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (188712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (188812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (188912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (189012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (189112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (189212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (189262) wifi:state: auth -> init (200)[0m
+[0;32mI (189262) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (189262) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (189282) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (189282) wifi:state: init -> auth (b0)[0m
+[0;32mI (189312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (189412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (189512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (189612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (189712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (189812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (189912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (190012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (190112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (190212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (190282) wifi:state: auth -> init (200)[0m
+[0;32mI (190282) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (190282) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (190312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (190412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (190512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (190612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (190712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (190812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (190912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (191012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (191112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (191212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (191312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (191412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (191512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (191612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (191712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (191812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (191912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (192012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (192112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (192212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (192312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (192412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (192512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (192612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (192702) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (192712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (192752) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (192762) wifi:state: init -> auth (b0)[0m
+[0;32mI (192812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (192912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (193012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (193112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (193212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (193312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (193412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (193512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (193612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (193712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (193762) wifi:state: auth -> init (200)[0m
+[0;32mI (193762) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (193762) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (193782) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (193782) wifi:state: init -> auth (b0)[0m
+[0;32mI (193812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (193912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (194012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (194112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (194212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (194312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (194412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (194512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (194612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (194712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (194782) wifi:state: auth -> init (200)[0m
+[0;32mI (194782) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (194792) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (194812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (194912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (195012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (195112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (195212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (195312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (195412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (195512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (195612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (195712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (195812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (195912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (196012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (196072) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (196072) wifi:state: init -> auth (b0)[0m
+[0;32mI (196112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (196212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (196312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (196412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (196512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (196612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (196712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (196812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (196912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (197012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (197072) wifi:state: auth -> init (200)[0m
+[0;32mI (197072) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (197082) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (197092) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (197102) wifi:state: init -> auth (b0)[0m
+[0;32mI (197112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (197212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (197312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (197412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (197512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (197612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (197712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (197812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (197912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (198012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (198102) wifi:state: auth -> init (200)[0m
+[0;32mI (198102) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (198102) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (198112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (198212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (198312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (198412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (198512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (198612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (198712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (198812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (198912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (199012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (199112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (199212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (199312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (199412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (199512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (199612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (199712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (199812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (199912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (200012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (200112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (200212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (200312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (200412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (200512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (200522) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (200572) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (200572) wifi:state: init -> auth (b0)[0m
+[0;32mI (200612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (200712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (200812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (200912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (201012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (201112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (201212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (201312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (201412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (201512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (201572) wifi:state: auth -> init (200)[0m
+[0;32mI (201572) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (201582) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (201602) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (201602) wifi:state: init -> auth (b0)[0m
+[0;32mI (201612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (201712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (201812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (201912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (202012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (202112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (202212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (202312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (202412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (202512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (202602) wifi:state: auth -> init (200)[0m
+[0;32mI (202602) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (202602) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (202612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (202712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (202782) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (202792) wifi:state: init -> auth (b0)[0m
+[0;32mI (202812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (202912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (203012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (203112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (203212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (203312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (203412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (203512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (203612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (203712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (203792) wifi:state: auth -> init (200)[0m
+[0;32mI (203792) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (203792) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (203812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (203812) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (203812) wifi:state: init -> auth (b0)[0m
+[0;32mI (203912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (204012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (204112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (204212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (204312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (204412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (204512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (204612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (204712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (204812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (204812) wifi:state: auth -> init (200)[0m
+[0;32mI (204812) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (204812) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (204912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (205012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (205112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (205212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (205312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (205412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (205512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (205612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (205712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (205812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (205912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (206012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (206112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (206212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (206312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (206412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (206512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (206612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (206712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (206812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (206912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (207012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (207112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (207212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (207232) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (207292) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (207292) wifi:state: init -> auth (b0)[0m
+[0;32mI (207312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (207412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (207512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (207612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (207712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (207812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (207912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (208012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (208112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (208212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (208292) wifi:state: auth -> init (200)[0m
+[0;32mI (208292) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (208292) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (208312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (208312) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (208312) wifi:state: init -> auth (b0)[0m
+[0;32mI (208412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (208512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (208612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (208712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (208812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (208912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (209012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (209112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (209212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (209312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (209322) wifi:state: auth -> init (200)[0m
+[0;32mI (209322) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (209322) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (209412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (209512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (209612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (209712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (209812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (209912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (210012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (210112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (210212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (210312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (210412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (210512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (210602) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (210602) wifi:state: init -> auth (b0)[0m
+[0;32mI (210612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (210712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (210812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (210912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (211012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (211112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (211212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (211312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (211412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (211512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (211602) wifi:state: auth -> init (200)[0m
+[0;32mI (211602) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (211612) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (211612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (211632) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (211632) wifi:state: init -> auth (b0)[0m
+[0;32mI (211712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (211812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (211912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (212012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (212112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (212212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (212312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (212412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (212512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (212612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (212632) wifi:state: auth -> init (200)[0m
+[0;32mI (212632) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (212632) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (212712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (212812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (212912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (213012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (213112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (213212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (213312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (213412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (213512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (213612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (213712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (213812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (213912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (214012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (214112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (214212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (214312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (214412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (214512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (214612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (214712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (214812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (214912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (215012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (215052) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (215102) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (215102) wifi:state: init -> auth (b0)[0m
+[0;32mI (215112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (215212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (215312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (215412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (215512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (215612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (215712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (215812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (215912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (216012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (216112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (216112) wifi:state: auth -> init (200)[0m
+[0;32mI (216112) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (216112) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (216132) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (216132) wifi:state: init -> auth (b0)[0m
+[0;32mI (216212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (216312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (216412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (216512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (216612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (216712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (216812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (216912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (217012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (217112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (217132) wifi:state: auth -> init (200)[0m
+[0;32mI (217132) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (217142) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (217212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (217312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (217322) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (217322) wifi:state: init -> auth (b0)[0m
+[0;32mI (217412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (217512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (217612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (217712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (217812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (217912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (218012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (218112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (218212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (218312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (218322) wifi:state: auth -> init (200)[0m
+[0;32mI (218322) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (218322) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (218342) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (218342) wifi:state: init -> auth (b0)[0m
+[0;32mI (218412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (218512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (218612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (218712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (218812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (218912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (219012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (219112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (219212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (219312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (219342) wifi:state: auth -> init (200)[0m
+[0;32mI (219342) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (219352) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (219412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (219512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (219612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (219712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (219812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (219912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (220012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (220112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (220212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (220312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (220412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (220512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (220612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (220712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (220812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (220912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (221012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (221112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (221212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (221312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (221412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (221512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (221612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (221712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (221762) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (221812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (221822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (221822) wifi:state: init -> auth (b0)[0m
+[0;32mI (221912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (222012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (222112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (222212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (222312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (222412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (222512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (222612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (222712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (222812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (222822) wifi:state: auth -> init (200)[0m
+[0;32mI (222822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (222822) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (222842) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (222852) wifi:state: init -> auth (b0)[0m
+[0;32mI (222912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (223012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (223112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (223212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (223312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (223412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (223512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (223612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (223712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (223812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (223852) wifi:state: auth -> init (200)[0m
+[0;32mI (223852) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (223852) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (223912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (224012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (224112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (224212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (224312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (224412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (224512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (224612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (224712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (224812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (224912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (225012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (225112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (225132) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (225132) wifi:state: init -> auth (b0)[0m
+[0;32mI (225212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (225312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (225412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (225512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (225612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (225712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (225812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (225912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (226012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (226112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (226142) wifi:state: auth -> init (200)[0m
+[0;32mI (226142) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (226142) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (226162) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (226162) wifi:state: init -> auth (b0)[0m
+[0;32mI (226212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (226312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (226412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (226512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (226612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (226712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (226812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (226912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (227012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (227112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (227162) wifi:state: auth -> init (200)[0m
+[0;32mI (227162) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (227162) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (227212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (227312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (227412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (227512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (227612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (227712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (227812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (227912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (228012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (228112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (228212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (228312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (228412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (228512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (228612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (228712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (228812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (228912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (229012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (229112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (229212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (229312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (229412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (229512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (229582) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (229612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (229642) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (229642) wifi:state: init -> auth (b0)[0m
+[0;32mI (229712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (229812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (229912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (230012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (230112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (230212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (230312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (230412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (230512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (230612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (230642) wifi:state: auth -> init (200)[0m
+[0;32mI (230642) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (230652) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (230662) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (230662) wifi:state: init -> auth (b0)[0m
+[0;32mI (230712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (230812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (230912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (231012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (231112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (231212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (231312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (231412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (231512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (231612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (231662) wifi:state: auth -> init (200)[0m
+[0;32mI (231662) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (231672) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (231712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (231812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (231852) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (231852) wifi:state: init -> auth (b0)[0m
+[0;32mI (231912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (232012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (232112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (232212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (232312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (232412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (232512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (232612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (232712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (232812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (232852) wifi:state: auth -> init (200)[0m
+[0;32mI (232852) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (232852) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (232872) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (232882) wifi:state: init -> auth (b0)[0m
+[0;32mI (232912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (233012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (233112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (233212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (233312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (233412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (233512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (233612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (233712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (233812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (233882) wifi:state: auth -> init (200)[0m
+[0;32mI (233882) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (233882) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (233912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (234012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (234112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (234212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (234312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (234412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (234512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (234612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (234712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (234812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (234912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (235012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (235112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (235212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (235312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (235412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (235512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (235612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (235712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (235812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (235912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (236012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (236112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (236212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (236302) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (236312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (236352) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (236352) wifi:state: init -> auth (b0)[0m
+[0;32mI (236412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (236512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (236612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (236712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (236812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (236912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (237012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (237112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (237212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (237312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (237352) wifi:state: auth -> init (200)[0m
+[0;32mI (237352) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (237352) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (237382) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (237382) wifi:state: init -> auth (b0)[0m
+[0;32mI (237412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (237512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (237612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (237712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (237812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (237912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (238012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (238112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (238212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (238312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (238382) wifi:state: auth -> init (200)[0m
+[0;32mI (238382) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (238382) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (238412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (238512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (238612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (238712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (238812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (238912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (239012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (239112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (239212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (239312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (239412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (239512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (239612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (239662) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (239672) wifi:state: init -> auth (b0)[0m
+[0;32mI (239712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (239812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (239912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (240012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (240112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (240212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (240312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (240412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (240512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (240612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (240672) wifi:state: auth -> init (200)[0m
+[0;32mI (240672) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (240672) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (240692) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (240692) wifi:state: init -> auth (b0)[0m
+[0;32mI (240712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (240812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (240912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (241012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (241112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (241212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (241312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (241412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (241512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (241612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (241692) wifi:state: auth -> init (200)[0m
+[0;32mI (241692) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (241692) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (241712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (241812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (241912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (242012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (242112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (242212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (242312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (242412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (242512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (242612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (242712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (242812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (242912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (243012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (243112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (243212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (243312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (243412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (243512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (243612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (243712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (243812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (243912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (244012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (244112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (244112) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (244172) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (244172) wifi:state: init -> auth (b0)[0m
+[0;32mI (244212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (244312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (244412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (244512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (244612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (244712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (244812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (244912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (245012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (245112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (245172) wifi:state: auth -> init (200)[0m
+[0;32mI (245172) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (245172) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (245192) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (245192) wifi:state: init -> auth (b0)[0m
+[0;32mI (245212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (245312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (245412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (245512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (245612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (245712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (245812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (245912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (246012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (246112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (246192) wifi:state: auth -> init (200)[0m
+[0;32mI (246202) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (246202) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (246212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (246312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (246382) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (246382) wifi:state: init -> auth (b0)[0m
+[0;32mI (246412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (246512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (246612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (246712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (246812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (246912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (247012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (247112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (247212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (247312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (247382) wifi:state: auth -> init (200)[0m
+[0;32mI (247382) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (247382) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (247402) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (247412) wifi:state: init -> auth (b0)[0m
+[0;32mI (247412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (247512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (247612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (247712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (247812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (247912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (248012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (248112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (248212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (248312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (248412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (248412) wifi:state: auth -> init (200)[0m
+[0;32mI (248412) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (248412) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (248512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (248612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (248712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (248812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (248912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (249012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (249112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (249212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (249312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (249412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (249512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (249612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (249712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (249812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (249912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (250012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (250112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (250212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (250312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (250412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (250512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (250612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (250712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (250812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (250832) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (250882) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (250882) wifi:state: init -> auth (b0)[0m
+[0;32mI (250912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251882) wifi:state: auth -> init (200)[0m
+[0;32mI (251892) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (251892) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (251912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (251912) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (251912) wifi:state: init -> auth (b0)[0m
+[0;32mI (252012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (252112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (252212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (252312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (252412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (252512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (252612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (252712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (252812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (252912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (252912) wifi:state: auth -> init (200)[0m
+[0;32mI (252912) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (252912) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (253012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (253112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (253212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (253312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (253412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (253512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (253612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (253712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (253812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (253912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (254012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (254112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (254202) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (254202) wifi:state: init -> auth (b0)[0m
+[0;32mI (254212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (254312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (254412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (254512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (254612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (254712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (254812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (254912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (255012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (255112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (255202) wifi:state: auth -> init (200)[0m
+[0;32mI (255202) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (255202) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (255212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (255222) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (255222) wifi:state: init -> auth (b0)[0m
+[0;32mI (255312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (255412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (255512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (255612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (255712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (255812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (255912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (256012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (256112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (256212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (256222) wifi:state: auth -> init (200)[0m
+[0;32mI (256222) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (256222) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (256312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (256412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (256512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (256612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (256712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (256812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (256912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (257012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (257112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (257212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (257312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (257412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (257512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (257612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (257712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (257812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (257912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (258012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (258112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (258212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (258312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (258412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (258512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (258612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (258642) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (258702) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (258702) wifi:state: init -> auth (b0)[0m
+[0;32mI (258712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (258812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (258912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (259012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (259112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (259212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (259312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (259412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (259512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (259612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (259702) wifi:state: auth -> init (200)[0m
+[0;32mI (259702) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (259702) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (259712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (259722) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (259722) wifi:state: init -> auth (b0)[0m
+[0;32mI (259812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (259912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260732) wifi:state: auth -> init (200)[0m
+[0;32mI (260732) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (260732) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (260812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (260912) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (260912) wifi:state: init -> auth (b0)[0m
+[0;32mI (261012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (261112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (261212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (261312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (261412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (261512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (261612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (261712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (261812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (261912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (261912) wifi:state: auth -> init (200)[0m
+[0;32mI (261922) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (261922) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (261942) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (261942) wifi:state: init -> auth (b0)[0m
+[0;32mI (262012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (262112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (262212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (262312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (262412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (262512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (262612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (262712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (262812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (262912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (262942) wifi:state: auth -> init (200)[0m
+[0;32mI (262942) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (262942) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (263012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (263112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (263212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (263312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (263412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (263512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (263612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (263712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (263812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (263912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (264012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (264112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (264212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (264312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (264412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (264512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (264612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (264712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (264812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (264912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (265012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (265112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (265212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (265312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (265362) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (265412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (265412) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (265412) wifi:state: init -> auth (b0)[0m
+[0;32mI (265512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (265612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (265712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (265812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (265912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (266012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (266112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (266212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (266312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (266412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (266422) wifi:state: auth -> init (200)[0m
+[0;32mI (266422) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (266422) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (266442) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (266442) wifi:state: init -> auth (b0)[0m
+[0;32mI (266512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (266612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (266712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (266812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (266912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (267012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (267112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (267212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (267312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (267412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (267442) wifi:state: auth -> init (200)[0m
+[0;32mI (267442) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (267442) WifiClient: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (267512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (267612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (267712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (267812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (267912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (268012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (268112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (268212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (268312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (268412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (268512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (268612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (268712) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (268732) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (268732) wifi:state: init -> auth (b0)[0m
+[0;32mI (268812) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (268912) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (269012) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (269112) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (269212) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (269312) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (269412) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (269512) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (269612) TCP: 0:TCP server loopback start
+[0m
+[0;32mI (269712) TCP: 0:TCP server loop
