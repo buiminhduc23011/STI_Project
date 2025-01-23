@@ -40,7 +40,7 @@ Modification
 *                                      LOCAL VARIABLES
 ==================================================================================================*/
 static char TAG[] = "SIOC_API";
-IOT_Data_t *SocketIoClientAPI::iot_Data = nullptr;
+
 static portMUX_TYPE param_lock = portMUX_INITIALIZER_UNLOCKED;
 /*==================================================================================================
 *                                      GLOBAL CONSTANTS
@@ -72,11 +72,11 @@ void SocketIoClientAPI::initCbFunc()
         api_sio_info("Connected <%d>", b?1:0);
         if(b)
         {
-            iot_Data->ServerStatus = true;
+           NetworkManager.serverStatus = true;
         }
         else 
         {
-            iot_Data->ServerStatus = false;
+            NetworkManager.serverStatus = false;
         } });
 
     sio->seertEventFuncCallBack([](SocketIoClient *ws, uint32_t id)
@@ -100,6 +100,49 @@ void SocketIoClientAPI::initCbFunc()
            OTARun();
         }
         cJSON_Delete(data_receive); });
+
+    sio->on("sync-time", [](SocketIoClient *c, char *msg)
+            {
+                 DS1307_DateTime_t datetime;
+                cJSON *data_receive = cJSON_Parse(msg);
+                api_sio_info("Event Receive: sync-time");
+                if (cJSON_GetObjectItem(data_receive, "Second"))
+                {
+                    uint16_t _second = cJSON_GetObjectItem(data_receive, "Second")->valueint;
+                    datetime.Second = _second;
+                }
+                if (cJSON_GetObjectItem(data_receive, "Minute"))
+                {
+                    uint16_t _minute = cJSON_GetObjectItem(data_receive, "Minute")->valueint;
+                    datetime.Minute = _minute;
+                }
+                if (cJSON_GetObjectItem(data_receive, "Hour"))
+                {
+                    uint16_t _hour = cJSON_GetObjectItem(data_receive, "Hour")->valueint;
+                    datetime.Hour = _hour;
+                }
+                if (cJSON_GetObjectItem(data_receive, "WeekDay"))
+                {
+                    uint16_t _weekDay = cJSON_GetObjectItem(data_receive, "WeekDay")->valueint;
+                    datetime.WeekDay = _weekDay;
+                }
+                if (cJSON_GetObjectItem(data_receive, "Day"))
+                {
+                    uint16_t _day = cJSON_GetObjectItem(data_receive, "Day")->valueint;
+                    datetime.Day = _day;
+                }
+                if (cJSON_GetObjectItem(data_receive, "Month"))
+                {
+                    uint16_t _month = cJSON_GetObjectItem(data_receive, "Month")->valueint;
+                    datetime.Month = _month;
+                }
+                if (cJSON_GetObjectItem(data_receive, "Year"))
+                {
+                    uint16_t _year = cJSON_GetObjectItem(data_receive, "Year")->valueint;
+                    datetime.Year = _year;
+                }
+                RTC_SetTime(&datetime);
+                cJSON_Delete(data_receive); });
 }
 
 //---------------------------------------------------------------------------------------------------
@@ -111,7 +154,7 @@ void SocketIoClientAPI::start()
 //---------------------------------------------------------------------------------------------------
 void SocketIoClientAPI::SIOClientSendEvent(const char *event, const char *data)
 {
-    if (iot_Data->ServerStatus)
+    if (NetworkManager.serverStatus)
     {
         if (FlagSio == false)
         {
@@ -125,7 +168,7 @@ void SocketIoClientAPI::SIOClientSendEvent(const char *event, const char *data)
 //---------------------------------------------------------------------------------------------------
 void SocketIoClientAPI::SIOClientSendEvent(const char *event, const char *data, uint32_t id)
 {
-    if (iot_Data->ServerStatus)
+    if (NetworkManager.serverStatus)
     {
         if (FlagSio == false)
         {
@@ -135,119 +178,26 @@ void SocketIoClientAPI::SIOClientSendEvent(const char *event, const char *data, 
         }
     }
 }
-//---------------------------------------------------------------------------------------------------
-void SocketIoClientAPI::SendData_MetterMFM384(MFM384_Data_t _data, int _id)
-{
-    //
-    cJSON *JSON = cJSON_CreateObject();
-    //
-    cJSON *JSON_Data = cJSON_CreateObject();
-    cJSON_AddNumberToObject(JSON_Data, "V1N", _data.V1N);
-    cJSON_AddNumberToObject(JSON_Data, "V2N", _data.V2N);
-    cJSON_AddNumberToObject(JSON_Data, "V3N", _data.V3N);
-    cJSON_AddNumberToObject(JSON_Data, "AVLN", _data.AVGLN);
-    cJSON_AddNumberToObject(JSON_Data, "V12", _data.V12);
-    cJSON_AddNumberToObject(JSON_Data, "V23", _data.V23);
-    cJSON_AddNumberToObject(JSON_Data, "V31", _data.V31);
-    cJSON_AddNumberToObject(JSON_Data, "VLL", _data.AVGLL);
-    cJSON_AddNumberToObject(JSON_Data, "I1", _data.I1);
-    cJSON_AddNumberToObject(JSON_Data, "I2", _data.I2);
-    cJSON_AddNumberToObject(JSON_Data, "I3", _data.I3);
-    cJSON_AddNumberToObject(JSON_Data, "AVGI", _data.AVGI);
-    cJSON_AddNumberToObject(JSON_Data, "KW1", _data.kW1);
-    cJSON_AddNumberToObject(JSON_Data, "KW2", _data.kW2);
-    cJSON_AddNumberToObject(JSON_Data, "KW3", _data.kW3);
-    cJSON_AddNumberToObject(JSON_Data, "KVA1", _data.kVA1);
-    cJSON_AddNumberToObject(JSON_Data, "KVA2", _data.kVA1);
-    cJSON_AddNumberToObject(JSON_Data, "KVA3", _data.kVA3);
-    cJSON_AddNumberToObject(JSON_Data, "KVAR1", _data.kVAr1);
-    cJSON_AddNumberToObject(JSON_Data, "KVAR2", _data.kVAr2);
-    cJSON_AddNumberToObject(JSON_Data, "KVAR3", _data.kVar3);
-    cJSON_AddNumberToObject(JSON_Data, "TotalKW", _data.Total_kW);
-    cJSON_AddNumberToObject(JSON_Data, "TotalKVA", _data.Total_kVA);
-    cJSON_AddNumberToObject(JSON_Data, "TotalKVAR", _data.Total_kVar);
-    cJSON_AddNumberToObject(JSON_Data, "PF1", _data.PF1);
-    cJSON_AddNumberToObject(JSON_Data, "PF2", _data.PF2);
-    cJSON_AddNumberToObject(JSON_Data, "PF3", _data.PF3);
-    cJSON_AddNumberToObject(JSON_Data, "Average_PF", _data.Average_PF);
-    cJSON_AddNumberToObject(JSON_Data, "Frequecy", _data.Frequency);
-    cJSON_AddNumberToObject(JSON_Data, "KWH", _data.kWh);
-    cJSON_AddNumberToObject(JSON_Data, "KVAH", _data.kVAh);
-    cJSON_AddNumberToObject(JSON_Data, "kVarh", _data.kVArh);
-    //
-    cJSON_AddNumberToObject(JSON, "ID", _id);
-    cJSON_AddItemToObject(JSON, "Data", JSON_Data);
-    char *data = cJSON_Print(JSON);
-    SIOClientSendEvent("update-data", data);
-    cJSON_Delete(JSON);
-    cJSON_free(data);
-}
-//---------------------------------------------------------------------------------------------------
-void SocketIoClientAPI::SendData_MetterPM810MG(PM810MG_Data_t _data, int _id)
-{
-    //
-    cJSON *JSON = cJSON_CreateObject();
-    //
-    cJSON *JSON_Data = cJSON_CreateObject();
-    cJSON_AddNumberToObject(JSON_Data, "V1N", _data.V1N);
-    cJSON_AddNumberToObject(JSON_Data, "V2N", _data.V2N);
-    cJSON_AddNumberToObject(JSON_Data, "V3N", _data.V3N);
-    cJSON_AddNumberToObject(JSON_Data, "AVLN", _data.AVGLN);
-    cJSON_AddNumberToObject(JSON_Data, "V12", _data.V12);
-    cJSON_AddNumberToObject(JSON_Data, "V23", _data.V23);
-    cJSON_AddNumberToObject(JSON_Data, "V31", _data.V31);
-    cJSON_AddNumberToObject(JSON_Data, "VLL", _data.AVGLL);
-    cJSON_AddNumberToObject(JSON_Data, "I1", _data.I1);
-    cJSON_AddNumberToObject(JSON_Data, "I2", _data.I2);
-    cJSON_AddNumberToObject(JSON_Data, "I3", _data.I3);
-    cJSON_AddNumberToObject(JSON_Data, "AVGI", _data.AVGI);
-    cJSON_AddNumberToObject(JSON_Data, "KW1", _data.kW1);
-    cJSON_AddNumberToObject(JSON_Data, "KW2", _data.kW2);
-    cJSON_AddNumberToObject(JSON_Data, "KW3", _data.kW3);
-    cJSON_AddNumberToObject(JSON_Data, "KVA1", _data.kVA1);
-    cJSON_AddNumberToObject(JSON_Data, "KVA2", _data.kVA1);
-    cJSON_AddNumberToObject(JSON_Data, "KVA3", _data.kVA3);
-    cJSON_AddNumberToObject(JSON_Data, "KVAR1", _data.kVAr1);
-    cJSON_AddNumberToObject(JSON_Data, "KVAR2", _data.kVAr2);
-    cJSON_AddNumberToObject(JSON_Data, "KVAR3", _data.kVar3);
-    cJSON_AddNumberToObject(JSON_Data, "TotalKW", _data.Total_kW);
-    cJSON_AddNumberToObject(JSON_Data, "TotalKVA", _data.Total_kVA);
-    cJSON_AddNumberToObject(JSON_Data, "TotalKVAR", _data.Total_kVar);
-    cJSON_AddNumberToObject(JSON_Data, "PF1", _data.PF1);
-    cJSON_AddNumberToObject(JSON_Data, "PF2", _data.PF2);
-    cJSON_AddNumberToObject(JSON_Data, "PF3", _data.PF3);
-    cJSON_AddNumberToObject(JSON_Data, "Average_PF", _data.Average_PF);
-    cJSON_AddNumberToObject(JSON_Data, "Frequecy", _data.Frequency);
-    cJSON_AddNumberToObject(JSON_Data, "KWH", _data.kWh);
-    cJSON_AddNumberToObject(JSON_Data, "KVAH", _data.kVAh);
-    cJSON_AddNumberToObject(JSON_Data, "kVarh", _data.kVArh);
-    //
-    cJSON_AddNumberToObject(JSON, "ID", _id);
-    cJSON_AddItemToObject(JSON, "Data", JSON_Data);
-    char *data = cJSON_Print(JSON);
-    SIOClientSendEvent("update-data", data);
-    cJSON_Delete(JSON);
-    cJSON_free(data);
-}
-void SocketIoClientAPI::SendData_INVT(INVT_Data_t _data, int _id)
-{
-    //
-    cJSON *JSON = cJSON_CreateObject();
-    //
-    cJSON *JSON_Data = cJSON_CreateObject();
-    cJSON_AddNumberToObject(JSON_Data, "Frequency", _data.Frequency);
-    cJSON_AddNumberToObject(JSON_Data, "Voltage", _data.Voltage);
-    cJSON_AddNumberToObject(JSON_Data, "Current", _data.Current);
-    cJSON_AddNumberToObject(JSON_Data, "Status", _data.Status);
-    cJSON_AddNumberToObject(JSON_Data, "Fault_Code", _data.Fault_Code);
-    //
-    cJSON_AddNumberToObject(JSON, "ID", _id);
-    cJSON_AddItemToObject(JSON, "Data", JSON_Data);
-    char *data = cJSON_Print(JSON);
-    SIOClientSendEvent("update-data", data);
-    cJSON_Delete(JSON);
-    cJSON_free(data);
-}
+
+// void SocketIoClientAPI::SendData_Chiller(Chiller_t _data, int _id)
+// {
+//     //
+//     cJSON *JSON = cJSON_CreateObject();
+//     //
+//     cJSON *JSON_Data = cJSON_CreateObject();
+//     cJSON_AddNumberToObject(JSON_Data, "InletTemp", _data.InletTemp);
+//     cJSON_AddNumberToObject(JSON_Data, "OutletTemp", _data.OutletTemp);
+//     cJSON_AddNumberToObject(JSON_Data, "Discharge_airtemperature", _data.Discharge_airtemperature);
+//     cJSON_AddNumberToObject(JSON_Data, "Status", _data.Status);
+//     //
+//     cJSON_AddNumberToObject(JSON, "ID", _id);
+//     cJSON_AddItemToObject(JSON, "Data", JSON_Data);
+//     char *data = cJSON_Print(JSON);
+//     SIOClientSendEvent("update-data", data);
+//     cJSON_Delete(JSON);
+//     cJSON_free(data);
+// }
+
 //---------------------------------------------------------------------------------------------------
 
 //======================================END FILE===================================================/

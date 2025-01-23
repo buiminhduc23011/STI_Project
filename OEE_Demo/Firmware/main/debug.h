@@ -1,5 +1,5 @@
 /*==================================================================================================
-*   Project              :  IOT GUNZE
+*   Project              :  DWIN DEMO
 *   Doccument            :  ESP32 DEBUG
 *   FileName             :  debug.h
 *   File Description     :  Khai bao cac ham nap code online
@@ -40,8 +40,9 @@ extern "C"
     ==================================================================================================*/
 #define console_infor(tag, fmt, args...) ESP_LOGI(tag, fmt, ##args)
 #define console_debug(tag, fmt, args...) \
-    if (enable_logging)                  \
+    if (!enable_logging)                 \
     ESP_LOGI(tag, fmt, ##args)
+#define console_warning(tag, fmt, args...) ESP_LOGW(tag, fmt, ##args)
 #define console_error(tag, fmt, args...) ESP_LOGE(tag, fmt, ##args)
     /*==================================================================================================
     *                                             ENUMS
@@ -50,7 +51,7 @@ extern "C"
     /*==================================================================================================
     *                                STRUCTURES AND OTHER TYPEDEFS
     ==================================================================================================*/
-    
+
     /*==================================================================================================
     *                                         FUNCTION
     ==================================================================================================*/

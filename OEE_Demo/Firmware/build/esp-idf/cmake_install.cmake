@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/SCADA_GUNZE_20250113_092616")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/DWIN_DEMO_20250123_151801")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -539,11 +539,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/espressif__esp-modbus/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/espressif__esp_websocket_client/cmake_install.cmake")
 endif()
 
@@ -554,12 +549,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/mb_example_common/cmake_install.cmake")
+  include("C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/main/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/main/cmake_install.cmake")
+  include("C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/Dwin/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -574,6 +569,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/Wifi/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/socketIO-esp-idf/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/DS1307/cmake_install.cmake")
 endif()
 

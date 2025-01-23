@@ -160,7 +160,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/SCADA_GUNZE_20250113_092616
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/DWIN_DEMO_20250123_151801
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -216,7 +216,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=SCADA_GUNZE_20250113_093927
+CMAKE_PROJECT_NAME:STATIC=DWIN_DEMO_20250123_151801
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=3.6.2
@@ -304,6 +304,15 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Disable package configuration, target export and installation
 DISABLE_PACKAGE_CONFIG_AND_INSTALL:BOOL=ON
 
+//Value Computed by CMake
+DWIN_DEMO_20250123_151801_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
+
+//Value Computed by CMake
+DWIN_DEMO_20250123_151801_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+DWIN_DEMO_20250123_151801_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
+
 //Build Mbed TLS programs.
 ENABLE_PROGRAMS:BOOL=
 
@@ -357,96 +366,6 @@ PYTHON:UNINITIALIZED=C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.ex
 
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_092616_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_092616_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_092616_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_092743_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_092743_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_092743_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_092938_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_092938_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_092938_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093115_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093115_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093115_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093227_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093227_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093227_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093400_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093400_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093400_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093508_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093508_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093508_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093634_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093634_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093634_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093850_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093850_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093850_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093927_BINARY_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093927_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SCADA_GUNZE_20250113_093927_SOURCE_DIR:STATIC=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware
 
 //Allow unsafe builds. These builds ARE NOT SECURE.
 UNSAFE_BUILD:BOOL=OFF
@@ -629,7 +548,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=122
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=123
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -683,7 +602,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/SCADA_GUNZE_20250113_092616
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/DWIN_DEMO_20250123_151801
 //Compiler reason failure
 _Python3_Compiler_REASON_FAILURE:INTERNAL=
 //Development reason failure

@@ -1,5 +1,5 @@
 /*==================================================================================================
-*   Project              :  IOT GUNZE
+*   Project              :  DWIN DEMO
 *   Doccument            :  ESP32 Ethernet
 *   FileName             :  Ethernet.h
 *   File Description     :  Khai bao cac ham nap MB Master
@@ -59,8 +59,9 @@ extern "C"
     *                                         FUNCTION
     ==================================================================================================*/
     void IO_Start(void);
-    bool IO_Get_RunState();
-    bool IO_Get_ErrorState();
+    uint8_t GetstateInput(uint8_t _pinin);
+    uint8_t GetstateOutput(uint8_t _pinout);
+    void SetOutput(uint8_t _pinout, uint8_t _state);
 
 #ifdef __cplusplus
 }

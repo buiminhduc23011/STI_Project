@@ -24,6 +24,8 @@ Modification
 #include <esp_log.h>
 #include "datatype.h"
 #include "Config.h"
+#include "DS1307.h"
+#include "RTC.h"
 
 /*==================================================================================================
 *                                        FILE VERSION
@@ -53,7 +55,6 @@ class SocketIoClientAPI
 private:
     char sv_url[100];
     SocketIoClient *sio;
-    static IOT_Data_t *iot_Data;
     int findFirstSetBit(int number)
     {
         for (int i = 0; i < 16; i++)
@@ -98,21 +99,17 @@ public:
     /*!
      * \brief Ham bat dau
      */
-    void begin(IOT_Data_t *_iot_Data)
+    void begin(const char *serverIP, uint16_t serverPort, const char *mac_Addr, const char *Ip_Addr, const char *FirmwareVer)
     {
-        iot_Data = _iot_Data;
-        EncodeUrl(_iot_Data->IpSev, _iot_Data->port);
+        EncodeUrl(serverIP, serverPort);
         char Mac[100];
-        sprintf(Mac, "Mac: %s\r\nIp: %s\r\nFirmware: %s", _iot_Data->Mac, _iot_Data->Ip_addr, _iot_Data->FimwareVer);
+        sprintf(Mac, "Mac: %s\r\nIp: %s\r\nFirmware: %s", mac_Addr, Ip_Addr, FirmwareVer);
         sio = new SocketIoClient(sv_url, Mac);
         FlagSio = false;
     }
     /*!
      * \brief Ham gui su kien connect IOT
      */
-    void SendData_MetterMFM384(MFM384_Data_t _data, int _id);
-    void SendData_MetterPM810MG(PM810MG_Data_t data, int _id);
-    void SendData_INVT(INVT_Data_t _data, int _id);
 };
 #endif /*<!__SOCKETIOCLIENT_API_H>*/
 //------------------------------------------END FILE----------------------------------------------//

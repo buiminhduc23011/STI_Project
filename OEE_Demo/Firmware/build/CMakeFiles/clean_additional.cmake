@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.16)
 
 if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   file(REMOVE_RECURSE
-  "SCADA_GUNZE_20250113_093927.bin"
-  "SCADA_GUNZE_20250113_093927.map"
+  "DWIN_DEMO_20250123_151801.bin"
+  "DWIN_DEMO_20250123_151801.map"
   "bootloader\\bootloader.bin"
   "bootloader\\bootloader.elf"
   "bootloader\\bootloader.map"

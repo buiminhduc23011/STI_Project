@@ -1,0 +1,260 @@
+[0;32mI (13) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time Jan 23 2025 15:18:39[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (20) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00011000 00019000[0m
+[0;32mI (58) boot:  1 otadata          OTA data         01 00 0002a000 00002000[0m
+[0;32mI (65) boot:  2 phy_init         RF data          01 01 0002c000 00001000[0m
+[0;32mI (73) boot:  3 ota_0            OTA app          00 10 00030000 001a9000[0m
+[0;32mI (80) boot:  4 ota_1            OTA app          00 11 001e0000 001a9000[0m
+[0;32mI (88) boot:  5 ot_storage       Unknown data     01 3a 00389000 00002000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) boot: No factory image, trying OTA 0[0m
+[0;32mI (104) esp_image: segment 0: paddr=00030020 vaddr=3f400020 size=22884h (141444) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000528ac vaddr=3ffb0000 size=04150h ( 16720) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=00056a04 vaddr=40080000 size=09614h ( 38420) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=916c8h (595656) map[0m
+[0;32mI (387) esp_image: segment 4: paddr=000f16f0 vaddr=40089614 size=105fch ( 67068) load[0m
+[0;32mI (427) boot: Loaded app from partition at offset 0x30000[0m
+[0;32mI (429) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (430) boot: Disabling RNG early entropy source...[0m
+[0;32mI (445) cpu_start: Multicore app[0m
+[0;32mI (453) cpu_start: Pro cpu start user code[0m
+[0;32mI (453) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (453) app_init: Application information:[0m
+[0;32mI (456) app_init: Project name:     DWIN_DEMO_20250123_151801[0m
+[0;32mI (462) app_init: App version:      1.0.2_20250123_151801[0m
+[0;32mI (468) app_init: Compile time:     Jan 23 2025 15:18:25[0m
+[0;32mI (474) app_init: ELF file SHA256:  3501d5330...[0m
+[0;32mI (480) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (484) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (489) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (494) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8738 len 000278C8 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40099C10 len 000063F0 (24 KiB): IRAM[0m
+[0;32mI (539) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (546) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (558) DWIN: DWIN initialized on UART 2[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (572) MAIN-TASK: ----------------Initializing----------------[0m
+[0;32mI (582) NVS: Hoan thanh
+[0m
+[0;32mI (582) uart: ESP_INTR_FLAG_IRAM fla[0;32mI (592) UART-TASK: Hello[0m
+[0;32mI (592) UART-TASK: UART initialized successfully[0m
+[0;32mI (592) HMI-TASK: -------------------------------Dwin starting------------------------------[0m
+[0;32mI (1602) DS1307: I2C initialized successfully.[0m
+[0;32mI (1602) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1612) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1622) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1632) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1642) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1652) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1672) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1682) wifi:wifi driver task: 3ffc57f0, prio:23, stack:6656, core=0[0m
+[0;32mI (1682) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (1682) wifi:wifi certification version: v7.0[0m
+[0;32mI (1682) wifi:config NVS flash: enabled[0m
+[0;32mI (1682) wifi:config nano formating: disabled[0m
+[0;32mI (1692) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1692) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1702) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (1702) wifi:Init management short buffer num: 32[0m
+[0;32mI (1712) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1722) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1722) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1722) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1732) wifi_init: rx ba win: 6[0m
+[0;32mI (1732) wifi_init: accept mbox: 6[0m
+[0;32mI (1742) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1742) wifi_init: udp mbox: 6[0m
+[0;32mI (1742) wifi_init: tcp mbox: 6[0m
+[0;32mI (1752) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1752) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1762) wifi_init: tcp mss: 1440[0m
+[0;32mI (1762) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1762) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1772) Wifi-Task: Connecting to STI_VietNam_No8...[0m
+[0;33mW (1772) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1782) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (1792) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (1872) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (1892) wifi:mode : sta (c4:d8:d5:96:4e:f0)[0m
+[0;32mI (1902) wifi:enable tsf[0m
+[0;32mI (3042) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (3372) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3372) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3382) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3402) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4292) DWIN: Address: 5100 | Data: 0x00 | Message: admin | Response: 5A A5 83 51 00 04 61 64 6D 69 6E FF FF 00 [0m
+[0;32mI (4392) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (5702) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (7022) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (7232) DWIN: Address: 5110 | Data: 0x00 | Message: sti0905 | Response: 5A A5 83 51 10 05 73 74 69 30 39 30 35 FF FF 00 [0m
+[0;32mI (7492) wifi:state: run -> init (0xfc0)[0m
+[0;32mI (7492) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7492) Wifi-Task: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (7532) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7532) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (7542) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (7632) DWIN: Address: 5050 | Data: 0x01 | Message:  | Response: 5A A5 83 50 50 01 00 01 [0m
+[0;32mI (7732) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (8352) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (8542) wifi:state: assoc -> init (0x2700)[0m
+[0;32mI (8552) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8552) Wifi-Task: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8552) DWIN: Address: 9000 | Data: 0x08 | Message:  | Response: 5A A5 83 90 00 01 00 08 [0m
+[0;32mI (8592) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8592) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8602) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8642) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8662) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (8872) DWIN: Address: 9000 | Data: 0x80 | Message: � | Response: 5A A5 83 90 00 01 00 80 [0m
+[0;32mI (8972) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (9372) DWIN: Address: 9001 | Data: 0x02 | Message:  | Response: 5A A5 83 90 01 01 00 02 [0m
+[0;32mI (9472) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (9682) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (9892) DWIN: Address: 9001 | Data: 0x08 | Message:  | Response: 5A A5 83 90 01 01 00 08 [0m
+[0;32mI (9892) HMI-TASK: value: 0[0m
+[0;32mI (10002) HMI-TASK: value: 1[0m
+[0;32mI (10102) HMI-TASK: value: 2[0m
+[0;32mI (10202) HMI-TASK: value: 3[0m
+[0;32mI (10302) HMI-TASK: value: 4[0m
+[0;32mI (10402) HMI-TASK: value: 5[0m
+[0;32mI (10502) HMI-TASK: value: 6[0m
+[0;32mI (10602) HMI-TASK: value: 7[0m
+[0;32mI (10702) HMI-TASK: value: 8[0m
+[0;32mI (10802) HMI-TASK: value: 9[0m
+[0;32mI (10902) HMI-TASK: value: 10[0m
+[0;32mI (11002) HMI-TASK: value: 11[0m
+[0;32mI (11102) HMI-TASK: value: 12[0m
+[0;32mI (11202) HMI-TASK: value: 13[0m
+[0;32mI (11302) HMI-TASK: value: 14[0m
+[0;32mI (11402) HMI-TASK: value: 15[0m
+[0;32mI (11502) HMI-TASK: value: 16[0m
+[0;32mI (11602) HMI-TASK: value: 17[0m
+[0;32mI (11702) HMI-TASK: value: 18[0m
+[0;32mI (11802) HMI-TASK: value: 19[0m
+[0;32mI (11902) HMI-TASK: value: 20[0m
+[0;32mI (12002) HMI-TASK: value: 21[0m
+[0;32mI (12102) HMI-TASK: value: 22[0m
+[0;32mI (12202) HMI-TASK: value: 23[0m
+[0;32mI (12302) HMI-TASK: value: 24[0m
+[0;32mI (12402) HMI-TASK: value: 25[0m
+[0;32mI (12502) HMI-TASK: value: 26[0m
+[0;32mI (12602) HMI-TASK: value: 27[0m
+[0;32mI (12702) HMI-TASK: value: 28[0m
+[0;32mI (12802) HMI-TASK: value: 29[0m
+[0;32mI (12902) HMI-TASK: value: 30[0m
+[0;32mI (13002) HMI-TASK: value: 31[0m
+[0;32mI (13102) HMI-TASK: value: 32[0m
+[0;32mI (13202) HMI-TASK: value: 33[0m
+[0;32mI (13302) HMI-TASK: value: 34[0m
+[0;32mI (13402) HMI-TASK: value: 35[0m
+[0;32mI (13502) HMI-TASK: value: 36[0m
+[0;32mI (13602) HMI-TASK: value: 37[0m
+[0;32mI (13702) HMI-TASK: value: 38[0m
+[0;32mI (13762) wifi:connected with STI_VietNam_No8, aid = 3, channel 11, BW20, bssid = 74:83:c2:8a:46:ee[0m
+[0;32mI (13762) wifi:security: WPA2-PSK, phy: bgn, rssi: -72[0m
+[0;32mI (13762) wifi:pm start, type: 1[0m
+
+[0;32mI (13772) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (13802) HMI-TASK: value: 39[0m
+[0;32mI (13812) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (13902) HMI-TASK: value: 40[0m
+[0;32mI (14002) HMI-TASK: value: 41[0m
+[0;32mI (14102) HMI-TASK: value: 42[0m
+[0;32mI (14202) HMI-TASK: value: 43[0m
+[0;32mI (14302) HMI-TASK: value: 44[0m
+[0;32mI (14402) HMI-TASK: value: 45[0m
+[0;32mI (14502) HMI-TASK: value: 46[0m
+[0;32mI (14602) HMI-TASK: value: 47[0m
+[0;32mI (14702) HMI-TASK: value: 48[0m
+[0;32mI (14802) HMI-TASK: value: 49[0m
+[0;32mI (14902) HMI-TASK: value: 50[0m
+[0;32mI (15002) HMI-TASK: value: 51[0m
+[0;32mI (15102) HMI-TASK: value: 52[0m
+[0;32mI (15202) HMI-TASK: value: 53[0m
+[0;32mI (15292) wifi:<ba-add>idx:0 (ifx:0, 74:83:c2:8a:46:ee), tid:0, ssn:0, winSize:64[0m
+[0;32mI (15302) HMI-TASK: value: 54[0m
+[0;32mI (15402) HMI-TASK: value: 55[0m
+[0;32mI (15502) HMI-TASK: value: 56[0m
+[0;32mI (15602) HMI-TASK: value: 57[0m
+[0;32mI (15702) HMI-TASK: value: 58[0m
+[0;32mI (15802) HMI-TASK: value: 59[0m
+[0;32mI (15902) HMI-TASK: value: 60[0m
+[0;32mI (16002) HMI-TASK: value: 61[0m
+[0;32mI (16102) HMI-TASK: value: 62[0m
+[0;32mI (16202) HMI-TASK: value: 63[0m
+[0;32mI (16302) HMI-TASK: value: 64[0m
+[0;32mI (16402) HMI-TASK: value: 65[0m
+[0;32mI (16502) HMI-TASK: value: 66[0m
+[0;32mI (16602) HMI-TASK: value: 67[0m
+[0;32mI (16702) HMI-TASK: value: 68[0m
+[0;32mI (16802) HMI-TASK: value: 69[0m
+[0;32mI (16902) HMI-TASK: value: 70[0m
+[0;32mI (17002) HMI-TASK: value: 71[0m
+[0;32mI (17102) HMI-TASK: value: 72[0m
+[0;32mI (17202) HMI-TASK: value: 73[0m
+[0;32mI (17302) HMI-TASK: value: 74[0m
+[0;32mI (17402) HMI-TASK: value: 75[0m
+[0;32mI (17502) HMI-TASK: value: 76[0m
+[0;32mI (17602) HMI-TASK: value: 77[0m
+[0;32mI (17702) HMI-TASK: value: 78[0m
+[0;32mI (17802) HMI-TASK: value: 79[0m
+[0;32mI (17902) HMI-TASK: value: 80[0m
+[0;32mI (18002) HMI-TASK: value: 81[0m
+[0;32mI (18102) HMI-TASK: value: 82[0m
+[0;32mI (18202) HMI-TASK: value: 83[0m
+[0;32mI (18302) HMI-TASK: value: 84[0m
+[0;32mI (18402) HMI-TASK: value: 85[0m
+[0;32mI (18502) HMI-TASK: value: 86[0m
+[0;32mI (18602) HMI-TASK: value: 87[0m
+[0;32mI (18702) HMI-TASK: value: 88[0m
+[0;32mI (18802) HMI-TASK: value: 89[0m
+[0;32mI (18902) HMI-TASK: value: 90[0m
+[0;32mI (19002) HMI-TASK: value: 91[0m
+[0;32mI (19102) HMI-TASK: value: 92[0m
+[0;32mI (19202) HMI-TASK: value: 93[0m
+[0;32mI (19302) HMI-TASK: value: 94[0m
+[0;32mI (19402) HMI-TASK: value: 95[0m
+[0;32mI (19502) HMI-TASK: value: 96[0m
+[0;32mI (19602) HMI-TASK: value: 97[0m
+[0;32mI (19702) HMI-TASK: value: 98[0m
+[0;32mI (19802) HMI-TASK: value: 99[0m
+[0;32mI (19902) HMI-TASK: value: 100[0m
+[0;32mI (20102) HMI-TASK: value: 101[0m
+[0;32mI (20302) HMI-TASK: value: 102[0m
+[0;32mI (20502) HMI-TASK: value: 103[0m
+[0;32mI (20702) HMI-TASK: value: 104[0m
+[0;32mI (20902) HMI-TASK: value: 105[0m
+[0;32mI (21102) HMI-TASK: value: 106[0m
+[0;32mI (21302) HMI-TASK: value: 107[0m
+[0;32mI (21502) HMI-TASK: value: 108[0m
+[0;32mI (21702) HMI-TASK: value: 109[0m
+[0;32mI (21902) HMI-TASK: value: 110[0m
+[0;32mI (22102) HMI-TASK: value: 111[0m
+[0;32mI (25702) DWIN: Address: 4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (25982) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (27332) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (28652) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (29982) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (31312) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (32632) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (33962) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (34282) esp_netif_handlers: Wifi-Task: sta ip: 192.168.1.45, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (34282) Wifi-Task: Got IPv4 event: Interface "Wifi-Task: sta" address: 192.168.1.45[0m
+[0;32mI (35302) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (36632) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m

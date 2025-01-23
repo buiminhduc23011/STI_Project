@@ -47,26 +47,6 @@ Modification
 #define NVS_KEY_IP_SERVER "IPSER"
 #define NVS_KEY_PORT_SERVER "PORTSER"
 //
-#define NSV_KEY_MFM384_01 "MFM384_01"
-#define NSV_KEY_MFM384_02 "MFM384_02"
-#define NSV_KEY_PM810MG_01 "PM810MG_01"
-#define NSV_KEY_PM810MG_02 "PM810MG_02"
-#define NSV_KEY_F800_01 "F800_01"
-#define NSV_KEY_F800_02 "F800_02"
-#define NSV_KEY_F700_01 "F700_01"
-#define NSV_KEY_F700_02 "F700_02"
-#define NSV_KEY_D700_01 "D700_01"
-#define NSV_KEY_D700_02 "D700_02"
-#define NVS_KEY_HVACBasic_01 "HVACBasic_01"
-#define NVS_KEY_HVACBasic_02 "HVACBasic_02"
-#define NVS_KEY_YaskawaV1000_01 "YaskawaV1000_01"
-#define NVS_KEY_YaskawaV1000_02 "YaskawaV1000_02"
-#define NVS_KEY_ToshibaVFS15_01 "ToshibaVFS15_01"
-#define NVS_KEY_ToshibaVFS15_02 "ToshibaVFS15_02"
-
-//
-#define NVS_KEY_MS300_01 "MS300_01"
-#define NVS_KEY_MS300_02 "MS300_02"
 //
 /*==================================================================================================
 *                                             ENUMS

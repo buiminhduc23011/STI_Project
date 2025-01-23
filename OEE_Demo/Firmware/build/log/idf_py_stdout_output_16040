@@ -1,0 +1,141 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Ducne\Documents\GitHub\STI_Project\OEE_Demo\Firmware\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/HMI_Handel.cpp.obj
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/HMI_Handel.cpp: In function 'void HMI_Task(void*)':
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/HMI_Handel.cpp:146:13: warning: unused variable 'count' [-Wunused-variable]
+  146 |     uint8_t count = 0;
+      |             ^~~~~
+[5/11] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.cpp.obj
+In file included from C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/main.h:16,
+                 from C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp:40:
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp: In function 'void ReadConfig()':
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/eeprom.h:43:27: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   43 | #define NVS_KEY_STATIC_IP "IP"
+      |                           ^~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp:109:25: note: in expansion of macro 'NVS_KEY_STATIC_IP'
+  109 |     if (envs.readString(NVS_KEY_STATIC_IP, NetworkManager.ipAddress) == 0)
+      |                         ^~~~~~~~~~~~~~~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp: In function 'void Set_Ethernet_Uart(char*, char*, char*, char*)':
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/eeprom.h:43:27: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   43 | #define NVS_KEY_STATIC_IP "IP"
+      |                           ^~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp:117:22: note: in expansion of macro 'NVS_KEY_STATIC_IP'
+  117 |     envs.writeString(NVS_KEY_STATIC_IP, ip);
+      |                      ^~~~~~~~~~~~~~~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/eeprom.h:44:25: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   44 | #define NVS_KEY_GATEWAY "GW"
+      |                         ^~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp:118:22: note: in expansion of macro 'NVS_KEY_GATEWAY'
+  118 |     envs.writeString(NVS_KEY_GATEWAY, gw);
+      |                      ^~~~~~~~~~~~~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/eeprom.h:45:20: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   45 | #define NVS_KEY_SN "SN"
+      |                    ^~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp:119:22: note: in expansion of macro 'NVS_KEY_SN'
+  119 |     envs.writeString(NVS_KEY_SN, sn);
+      |                      ^~~~~~~~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/eeprom.h:46:21: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   46 | #define NVS_KEY_DNS "DNS"
+      |                     ^~~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp:120:22: note: in expansion of macro 'NVS_KEY_DNS'
+  120 |     envs.writeString(NVS_KEY_DNS, dns);
+      |                      ^~~~~~~~~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp: In function 'void Set_SocketIO_Uart(char*, uint16_t)':
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/eeprom.h:47:27: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   47 | #define NVS_KEY_IP_SERVER "IPSER"
+      |                           ^~~~~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp:124:22: note: in expansion of macro 'NVS_KEY_IP_SERVER'
+  124 |     envs.writeString(NVS_KEY_IP_SERVER, ip);
+      |                      ^~~~~~~~~~~~~~~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/eeprom.h:48:29: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   48 | #define NVS_KEY_PORT_SERVER "PORTSER"
+      |                             ^~~~~~~~~
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/main/app_main.cpp:125:22: note: in expansion of macro 'NVS_KEY_PORT_SERVER'
+  125 |     envs.writeUint16(NVS_KEY_PORT_SERVER, port);
+      |                      ^~~~~~~~~~~~~~~~~~~
+[6/11] Linking C static library esp-idf\main\libmain.a
+[7/11] Generating ld/sections.ld
+[8/11] Linking CXX executable DWIN_DEMO_20250123_151801.elf
+[9/11] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/DWIN_DEMO_20250123_151801.bin
+[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Ducne\Documents\GitHub\STI_Project\OEE_Demo\Firmware\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/partition_table/partition-table.bin C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/DWIN_DEMO_20250123_151801.bin"
+DWIN_DEMO_20250123_151801.bin binary size 0xd1cf0 bytes. Smallest app partition is 0x1a9000 bytes. 0xd7310 bytes (51%) free.
+[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.2\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.3.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.3.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build -P C:/Espressif/frameworks/esp-idf-v5.3.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM23 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x30000 DWIN_DEMO_20250123_151801.bin 0x8000 partition_table/partition-table.bin 0x2a000 ota_data_initial.bin
+esptool.py v4.8.1
+Serial port COM23
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c4:d8:d5:96:4e:f0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00030000 to 0x00101fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0002a000 to 0x0002bfff...
+SHA digest in image updated
+Compressed 26752 bytes to 16353...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16353 compressed) at 0x00001000 in 0.6 seconds (effective 369.1 kbit/s)...
+Hash of data verified.
+Compressed 859376 bytes to 543826...
+Writing at 0x00030000... (2 %)
+Writing at 0x0003d226... (5 %)
+Writing at 0x00044f31... (8 %)
+Writing at 0x00049d98... (11 %)
+Writing at 0x00054e91... (14 %)
+Writing at 0x0005b90b... (17 %)
+Writing at 0x000612bc... (20 %)
+Writing at 0x00066ab9... (23 %)
+Writing at 0x0006c8e7... (26 %)
+Writing at 0x000726fe... (29 %)
+Writing at 0x00078828... (32 %)
+Writing at 0x0007e236... (35 %)
+Writing at 0x000843e5... (38 %)
+Writing at 0x000895c6... (41 %)
+Writing at 0x0008e974... (44 %)
+Writing at 0x00094287... (47 %)
+Writing at 0x000998a5... (50 %)
+Writing at 0x0009ec96... (52 %)
+Writing at 0x000a4476... (55 %)
+Writing at 0x000aa39e... (58 %)
+Writing at 0x000afbf6... (61 %)
+Writing at 0x000b56fa... (64 %)
+Writing at 0x000bb4a6... (67 %)
+Writing at 0x000c0cfc... (70 %)
+Writing at 0x000c6a8d... (73 %)
+Writing at 0x000cc7ca... (76 %)
+Writing at 0x000d2175... (79 %)
+Writing at 0x000d84c2... (82 %)
+Writing at 0x000e1f96... (85 %)
+Writing at 0x000e9940... (88 %)
+Writing at 0x000ef35a... (91 %)
+Writing at 0x000f547f... (94 %)
+Writing at 0x000fb527... (97 %)
+Writing at 0x00100860... (100 %)
+Wrote 859376 bytes (543826 compressed) at 0x00030000 in 12.4 seconds (effective 554.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 144...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (144 compressed) at 0x00008000 in 0.0 seconds (effective 813.7 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0002a000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0002a000 in 0.1 seconds (effective 1072.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,2 +1,2 @@
 --flash_mode dio --flash_freq 40m --flash_size 4MB
-0x30000 SCADA_GUNZE_20250113_093927.bin
+0x30000 DWIN_DEMO_20250123_151801.bin

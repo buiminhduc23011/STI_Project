@@ -45,8 +45,8 @@ extern "C"
     {
         FLAG_NONE = 0,
         FLAG_EVENT_UART_CONFIG_DEVICE = 0x02,
-        FLAG_EVENT_UART_SET_MFM384_01 = 0x04,
-        FLAG_EVENT_UART_SET_MFM384_02 = 0x10,
+        FLAG_EVENT_CHECKLOGIN = 0x02,
+        FLAG_EVENT_CHECKLOGINSUCCES = 0x04,
     };
     /*==================================================================================================
     *                                STRUCTURES AND OTHER TYPEDEFS

@@ -1,0 +1,137 @@
+[0;32mI (13) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time Jan 23 2025 15:18:39[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (20) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00011000 00019000[0m
+[0;32mI (58) boot:  1 otadata          OTA data         01 00 0002a000 00002000[0m
+[0;32mI (65) boot:  2 phy_init         RF data          01 01 0002c000 00001000[0m
+[0;32mI (73) boot:  3 ota_0            OTA app          00 10 00030000 001a9000[0m
+[0;32mI (80) boot:  4 ota_1            OTA app          00 11 001e0000 001a9000[0m
+[0;32mI (88) boot:  5 ot_storage       Unknown data     01 3a 00389000 00002000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) boot: No factory image, trying OTA 0[0m
+[0;32mI (104) esp_image: segment 0: paddr=00030020 vaddr=3f400020 size=22884h (141444) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000528ac vaddr=3ffb0000 size=04150h ( 16720) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=00056a04 vaddr=40080000 size=09614h ( 38420) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=916a0h (595616) map[0m
+[0;32mI (387) esp_image: segment 4: paddr=000f16c8 vaddr=40089614 size=105fch ( 67068) load[0m
+[0;32mI (427) boot: Loaded app from partition at offset 0x30000[0m
+[0;32mI (429) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (430) boot: Disabling RNG early entropy source...[0m
+[0;32mI (445) cpu_start: Multicore app[0m
+[0;32mI (453) cpu_start: Pro cpu start user code[0m
+[0;32mI (453) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (453) app_init: Application information:[0m
+[0;32mI (456) app_init: Project name:     DWIN_DEMO_20250123_151801[0m
+[0;32mI (462) app_init: App version:      1.0.2_20250123_151801[0m
+[0;32mI (468) app_init: Compile time:     Jan 23 2025 15:18:25[0m
+[0;32mI (474) app_init: ELF file SHA256:  e3947dbec...[0m
+[0;32mI (480) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (484) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (489) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (494) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8738 len 000278C8 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40099C10 len 000063F0 (24 KiB): IRAM[0m
+[0;32mI (539) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (546) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (558) DWIN: DWIN initialized on UART 2[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (572) MAIN-TASK: ----------------Initializing----------------[0m
+[0;32mI (582) NVS: Hoan thanh
+[0m
+[0;32mI (582) uart: ESP_INTR_FLAG_IRAM fla[0;32mI (592) UART-TASK: Hello[0m
+[0;32mI (592) UART-TASK: UART initialized successfully[0m
+[0;32mI (592) HMI-TASK: -------------------------------Dwin starting------------------------------[0m
+[0;32mI (1602) DS1307: I2C initialized successfully.[0m
+[0;32mI (1602) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1612) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1622) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1632) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1642) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1652) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1672) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1682) wifi:wifi driver task: 3ffc5824, prio:23, stack:6656, core=0[0m
+[0;32mI (1682) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (1682) wifi:wifi certification version: v7.0[0m
+[0;32mI (1682) wifi:config NVS flash: enabled[0m
+[0;32mI (1682) wifi:config nano formating: disabled[0m
+[0;32mI (1692) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1692) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1702) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (1702) wifi:Init management short buffer num: 32[0m
+[0;32mI (1712) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1722) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1722) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1722) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1732) wifi_init: rx ba win: 6[0m
+[0;32mI (1732) wifi_init: accept mbox: 6[0m
+[0;32mI (1742) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1742) wifi_init: udp mbox: 6[0m
+[0;32mI (1742) wifi_init: tcp mbox: 6[0m
+[0;32mI (1752) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1752) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1762) wifi_init: tcp mss: 1440[0m
+[0;32mI (1762) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1762) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1772) Wifi-Task: Connecting to STI_VietNam_No8...[0m
+[0;33mW (1772) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1782) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1872) wifi:mode : sta (c4:d8:d5:96:4e:f0)[0m
+[0;32mI (1882) wifi:enable tsf[0m
+[0;32mI (3042) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (3402) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3402) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3412) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3432) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4392) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (5712) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (6492) wifi:state: run -> init (0xf00)[0m
+[0;32mI (6492) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6492) Wifi-Task: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (6532) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6532) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (6552) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (6562) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (6662) wifi:connected with STI_VietNam_No8, aid = 2, channel 11, BW20, bssid = 7a:83:c2:8a:46:fb[0m
+[0;32mI (6662) wifi:security: WPA2-PSK, phy: bgn, rssi: -63[0m
+[0;32mI (6662) wifi:pm start, type: 1[0m
+
+[0;32mI (6662) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (6732) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (7042) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (7152) DWIN: Address: 5100 | Data: 0x00 | Message: admin | Response: 5A A5 83 51 00 04 61 64 6D 69 6E FF FF 00 [0m
+[0;32mI (7222) wifi:<ba-add>idx:0 (ifx:0, 7a:83:c2:8a:46:fb), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8362) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (9692) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (10322) DWIN: Address: 5110 | Data: 0x00 | Message: sti0905 | Response: 5A A5 83 51 10 05 73 74 69 30 39 30 35 FF FF 00 [0m
+[0;32mI (10722) DWIN: Address: 5050 | Data: 0x01 | Message:  | Response: 5A A5 83 50 50 01 00 01 [0m
+[0;32mI (10822) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (11042) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (11752) DWIN: Address: 9000 | Data: 0x08 | Message:  | Response: 5A A5 83 90 00 01 00 08 [0m
+[0;32mI (11862) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (12162) DWIN: Address: 9000 | Data: 0x80 | Message: � | Response: 5A A5 83 90 00 01 00 80 [0m
+[0;32mI (12272) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (12382) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (12912) DWIN: Address: 9001 | Data: 0x02 | Message:  | Response: 5A A5 83 90 01 01 00 02 [0m
+[0;32mI (13012) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (13412) DWIN: Address: 9001 | Data: 0x08 | Message:  | Response: 5A A5 83 90 01 01 00 08 [0m
+[0;32mI (13512) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (13722) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (14672) esp_netif_handlers: Wifi-Task: sta ip: 192.168.1.45, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (14672) Wifi-Task: Got IPv4 event: Interface "Wifi-Task: sta" address: 192.168.1.45[0m
+[0;32mI (15042) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (16362) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (17702) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m

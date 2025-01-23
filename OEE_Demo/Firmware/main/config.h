@@ -1,5 +1,5 @@
 /*==================================================================================================
-*   Project              :  IOT GUNZE GD2 Framework ESP-IDF V4.4.8
+*   Project              :  DWIN DEMO GD2 Framework ESP-IDF V4.4.8
 *   Document             :  C Program PDF
 *   FileName             :  config.h
 *   File Description     :  Khai báo các thông số cấu hình phần cứng
@@ -60,16 +60,27 @@ extern "C"
 #define MB_UART_RTS (UART_PIN_NO_CHANGE) // RTS pin not used
 #define MB_PAR_NONE (0)
 #define MB_PAR_EVEN (1)
+// DWIN
+#define DWIN_UART_NUM UART_NUM_2
+#define DWIN_TX_PIN (27)
+#define DWIN_RX_PIN (14)
+#define DWIN_BAUD_RATE 115200
+// DS1307 I2C Configurations
+#define DS1307_I2C_PORT I2C_NUM_0
+#define DS1307_SDA_GPIO 21
+#define DS1307_SCL_GPIO 22
+#define DS1307_ADDRESS 0x68
+#define I2C_FREQ_HZ 100000 // 100 kHz
 // INPUT
 #define INPUT_01 GPIO_NUM_36
 #define INPUT_02 GPIO_NUM_39
 #define INPUT_03 GPIO_NUM_34
 #define INPUT_04 GPIO_NUM_35
 // OUTPUT
-#define OUTPUT_01 GPIO_NUM_25
-#define OUTPUT_02 GPIO_NUM_26
-#define OUTPUT_03 GPIO_NUM_27
-#define OUTPUT_04 GPIO_NUM_14
+#define OUTPUT_01 GPIO_NUM_32
+#define OUTPUT_02 GPIO_NUM_33
+#define OUTPUT_03 GPIO_NUM_4
+#define OUTPUT_04 GPIO_NUM_15
     /*==================================================================================================
     *                                             ENUMS
     ==================================================================================================*/

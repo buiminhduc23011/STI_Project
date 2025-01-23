@@ -1,0 +1,315 @@
+[0;32mI (13) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time Jan 23 2025 15:18:39[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (20) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00011000 00019000[0m
+[0;32mI (58) boot:  1 otadata          OTA data         01 00 0002a000 00002000[0m
+[0;32mI (65) boot:  2 phy_init         RF data          01 01 0002c000 00001000[0m
+[0;32mI (73) boot:  3 ota_0            OTA app          00 10 00030000 001a9000[0m
+[0;32mI (80) boot:  4 ota_1            OTA app          00 11 001e0000 001a9000[0m
+[0;32mI (88) boot:  5 ot_storage       Unknown data     01 3a 00389000 00002000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) boot: No factory image, trying OTA 0[0m
+[0;32mI (104) esp_image: segment 0: paddr=00030020 vaddr=3f400020 size=22884h (141444) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000528ac vaddr=3ffb0000 size=04150h ( 16720) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=00056a04 vaddr=40080000 size=09614h ( 38420) load[0m
+[0;32mI (183) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=916a0h (595616) map[0m
+[0;32mI (387) esp_image: segment 4: paddr=000f16c8 vaddr=40089614 size=105fch ( 67068) load[0m
+[0;32mI (427) boot: Loaded app from partition at offset 0x30000[0m
+[0;32mI (429) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (429) boot: Disabling RNG early entropy source...[0m
+[0;32mI (444) cpu_start: Multicore app[0m
+[0;32mI (453) cpu_start: Pro cpu start user code[0m
+[0;32mI (453) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (453) app_init: Application information:[0m
+[0;32mI (456) app_init: Project name:     DWIN_DEMO_20250123_151801[0m
+[0;32mI (462) app_init: App version:      1.0.2_20250123_151801[0m
+[0;32mI (468) app_init: Compile time:     Jan 23 2025 15:18:25[0m
+[0;32mI (474) app_init: ELF file SHA256:  11c3dd37d...[0m
+[0;32mI (480) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (484) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (489) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (494) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8738 len 000278C8 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40099C10 len 000063F0 (24 KiB): IRAM[0m
+[0;32mI (539) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (546) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (558) DWIN: DWIN initialized on UART 2[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (572) MAIN-TASK: ----------------Initializing----------------[0m
+[0;32mI (582) NVS: Hoan thanh
+[0m
+[0;32mI (582) uart: ESP_INTR_FLAG_IRAM fla[0;32mI (592) UART-TASK: Hello[0m
+[0;32mI (592) UART-TASK: UART initialized successfully[0m
+[0;32mI (592) HMI-TASK: -------------------------------Dwin starting------------------------------[0m
+[0;32mI (1602) DS1307: I2C initialized successfully.[0m
+[0;32mI (1602) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1602) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1612) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1622) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1632) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1642) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1652) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1672) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1682) wifi:wifi driver task: 3ffc5824, prio:23, stack:6656, core=0[0m
+[0;32mI (1682) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (1682) wifi:wifi certification version: v7.0[0m
+[0;32mI (1682) wifi:config NVS flash: enabled[0m
+[0;32mI (1682) wifi:config nano formating: disabled[0m
+[0;32mI (1692) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1692) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1702) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (1702) wifi:Init management short buffer num: 32[0m
+[0;32mI (1712) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1722) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1722) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1722) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1732) wifi_init: rx ba win: 6[0m
+[0;32mI (1732) wifi_init: accept mbox: 6[0m
+[0;32mI (1742) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1742) wifi_init: udp mbox: 6[0m
+[0;32mI (1742) wifi_init: tcp mbox: 6[0m
+[0;32mI (1752) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1752) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1762) wifi_init: tcp mss: 1440[0m
+[0;32mI (1762) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1762) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1772) Wifi-Task: Connecting to STI_VietNam_No8...[0m
+[0;33mW (1772) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1782) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1872) wifi:mode : sta (c4:d8:d5:96:4e:f0)[0m
+[0;32mI (1882) wifi:enable tsf[0m
+[0;32mI (3042) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (3372) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3372) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4372) wifi:state: auth -> init (0x200)[0m
+[0;32mI (4372) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4372) Wifi-Task: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (4392) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (4442) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4452) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5452) wifi:state: auth -> init (0x200)[0m
+[0;32mI (5452) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5452) Wifi-Task: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5512) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5512) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5712) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (6512) wifi:state: auth -> init (0x200)[0m
+[0;32mI (6512) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6512) Wifi-Task: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (6532) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6532) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (7032) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (7532) wifi:state: auth -> init (0x200)[0m
+[0;32mI (7532) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7542) Wifi-Task: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8352) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (9682) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (9962) Wifi-Task: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (9972) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (9972) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (9982) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (9992) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (10042) wifi:connected with STI_VietNam_No8, aid = 2, channel 11, BW20, bssid = 7a:83:c2:8a:46:fb[0m
+[0;32mI (10042) wifi:security: WPA2-PSK, phy: bgn, rssi: -58[0m
+[0;32mI (10042) wifi:pm start, type: 1[0m
+
+[0;32mI (10042) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (10072) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (10562) wifi:<ba-add>idx:0 (ifx:0, 7a:83:c2:8a:46:fb), tid:0, ssn:0, winSize:64[0m
+[0;32mI (11002) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (11562) esp_netif_handlers: Wifi-Task: sta ip: 192.168.1.45, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (11562) Wifi-Task: Got IPv4 event: Interface "Wifi-Task: sta" address: 192.168.1.45[0m
+[0;32mI (12332) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (13662) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (14992) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (16322) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (17652) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (18972) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (20202) DWIN: Address: 5100 | Data: 0x00 | Message: admin | Response: 5A A5 83 51 00 04 61 64 6D 69 6E FF FF 00 [0m
+[0;32mI (20312) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (21642) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (22972) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (23382) DWIN: Address: 5110 | Data: 0x00 | Message: sti0905 | Response: 5A A5 83 51 10 05 73 74 69 30 39 30 35 FF FF 00 [0m
+[0;32mI (23792) DWIN: Address: 5050 | Data: 0x01 | Message:  | Response: 5A A5 83 50 50 01 00 01 [0m
+[0;32mI (23902) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (24312) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (24732) DWIN: Address: 9000 | Data: 0x08 | Message:  | Response: 5A A5 83 90 00 01 00 08 [0m
+[0;32mI (24832) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (25032) DWIN: Address: 9000 | Data: 0x80 | Message: � | Response: 5A A5 83 90 00 01 00 80 [0m
+[0;32mI (25142) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (25542) DWIN: Address: 9001 | Data: 0x02 | Message:  | Response: 5A A5 83 90 01 01 00 02 [0m
+[0;32mI (25712) DWIN: Address: 4F4B4F4B4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (26212) DWIN: Address: 9001 | Data: 0x08 | Message:  | Response: 5A A5 83 90 01 01 00 08 [0m
+[0;32mI (26322) DWIN: Address: 4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (27032) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (28352) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (29682) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (30992) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (32312) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (33632) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (34952) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (36272) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (37602) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (38932) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (40262) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (41592) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (42922) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (44252) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (45572) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (46892) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (48222) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (49542) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (50862) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (52192) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (53512) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (54832) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (56152) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (57472) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (58792) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (60112) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (61442) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (62782) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (64112) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (65442) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (66772) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (68102) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (69422) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (70752) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (72092) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (73422) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (74742) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (76062) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (77412) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (78742) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (80052) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (81372) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (82692) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (84012) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (85332) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (86652) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (87972) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (89292) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (90612) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (91932) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (93252) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (94572) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (95892) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (97212) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (98532) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (99852) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (101172) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (102492) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (103812) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (105142) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (106472) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (107802) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (109142) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (110462) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (111802) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (113132) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (114452) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (115782) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (117102) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (118422) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (119782) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (121112) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (122442) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (123762) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (125092) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (126422) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (127732) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (129052) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (130372) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (131692) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (133012) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (134332) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (135652) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (136972) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (138302) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (139632) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (140962) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (142292) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (143612) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (144942) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (146262) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (147592) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (148912) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (150232) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (151552) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (152872) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (154192) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (155512) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (156832) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (158162) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (159492) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (160812) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (162132) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (163452) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (164782) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (166102) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (167422) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (168742) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (170062) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (171392) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (172712) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (174032) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (175352) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (176682) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (178002) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (179322) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (180642) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (181982) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (183292) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (184612) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (185932) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (187252) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (188572) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (189892) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (191222) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (192542) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (193862) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (195192) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (196522) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (197852) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (199192) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (200522) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (201852) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (203172) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (204492) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (205812) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (207132) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (208452) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (209772) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (211092) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (212412) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (213732) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (215052) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (216372) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (217692) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (219042) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (220362) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (221702) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (223032) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (224372) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (225692) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (227032) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (228362) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (229692) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (231012) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (232352) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (233682) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (235002) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m
+[0;32mI (236342) DWIN: Address: 4F4B4F4B4F4B | Data: 0x00 | Message:  | Response: 5A A5 82 4F 4B 5A A5 82 4F 4B 5A A5 82 4F 4B [0m

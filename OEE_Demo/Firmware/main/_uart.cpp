@@ -1,5 +1,5 @@
 /*==================================================================================================
-*   Project              :  IOT GUNZE
+*   Project              :  DWIN DEMO
 *   Doccument            :  ESP32 UART
 *   FileName             :  uart.cpp
 *   File Description     :  Khai báo các hàm UART

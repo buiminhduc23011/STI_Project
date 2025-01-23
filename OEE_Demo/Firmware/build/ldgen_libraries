@@ -79,11 +79,12 @@ C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/nvs_
 C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/perfmon/libperfmon.a
 C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/spiffs/libspiffs.a
 C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
-C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/espressif__esp-modbus/libespressif__esp-modbus.a
 C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/espressif__esp_websocket_client/libespressif__esp_websocket_client.a
 C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/espressif__mdns/libespressif__mdns.a
-C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/mb_example_common/libmb_example_common.a
 C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/main/libmain.a
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/Dwin/libDwin.a
 C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/ETH_W5500/libETH_W5500.a
 C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/IEC_Timer/libIEC_Timer.a
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/Wifi/libWifi.a
 C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/socketIO-esp-idf/libsocketIO-esp-idf.a
+C:/Users/Ducne/Documents/GitHub/STI_Project/OEE_Demo/Firmware/build/esp-idf/DS1307/libDS1307.a
